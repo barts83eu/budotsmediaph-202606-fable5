@@ -28,6 +28,10 @@ generator/template.html   shared page shell (nav, hero, footer, GA tag)
 - `website/index.html` is **not** generated — it is maintained by hand. Anything added to the template head (like the Google Analytics tag, `G-0QY44NZW9Y`, added 2026-07-05) must be mirrored in `index.html` manually, and vice versa.
 - After editing, run from the repo root: `python3 generator/build.py` — then commit the regenerated pages together with the generator change. Pushing to `main` auto-deploys via GitHub Pages.
 
+## Sitemap
+
+`python3 generator/sitemap.py` regenerates `website/sitemap.xml` (all landing pages + stories, `<lastmod>` from each file's last git commit). Run it after adding or renaming pages, before pushing.
+
 ## Adding a story page
 
 1. Add an entry to `PAGES` in `build.py`:
