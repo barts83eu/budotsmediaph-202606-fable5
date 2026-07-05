@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0QY44NZW9Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0QY44NZW9Y');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page not found — Budots Media PH</title>
+<meta name="robots" content="noindex">
+<style>
+  body{margin:0;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(#000,#1a1a1a);color:#fff;font-family:"Bebas Neue Pro","Bebas Neue",system-ui,sans-serif;text-align:center;padding:2rem}
+  h1{font-size:clamp(4rem,18vw,10rem);margin:0;letter-spacing:.05em}
+  p{color:#aaa;letter-spacing:.12em;text-transform:uppercase}
+  nav{display:flex;gap:1.6rem;flex-wrap:wrap;justify-content:center;margin-top:1.4rem}
+  a{color:#ffd400;text-decoration:none;letter-spacing:.14em;text-transform:uppercase;font-size:1.1rem}
+  a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<h1>404</h1>
+<p>That page drifted off the map</p>
+<nav>
+  <a href="/" data-p="">Home</a>
+  <a href="/stories/" data-p="stories/">Stories</a>
+  <a href="/projects/" data-p="projects/">Projects</a>
+  <a href="/ai/" data-p="ai/">AI</a>
+  <a href="/showcase/" data-p="showcase/">Showcase</a>
+</nav>
+<script>
+  // 404 is served at any depth; on *.github.io the site lives under /<repo>/, on a custom domain at /.
+  var base = location.hostname.endsWith('github.io') ? '/' + location.pathname.split('/')[1] + '/' : '/';
+  document.querySelectorAll('nav a').forEach(function(a){ a.href = base + a.getAttribute('data-p'); });
+</script>
+</body>
+</html>

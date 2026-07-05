@@ -60,6 +60,32 @@ Format: `YEAR-MONTH · CLIENT — description — link`. Month omitted where unk
 - **Pier 88, Liloan** — Photography documentation — [Wikipedia](https://ceb.wikipedia.org/wiki/Budots_Media)
 - **Other clients** (per portfolio logo walls): Gatorade, Harley-Davidson Cebu, Motul, Island Buzz Philippines, AKAW Surf Shop, Cebu Metro News, BYD, Megaworld, Belmont Hotel, Aboitiz Foundation, and more — [Portfolio](https://budotsmedia.webflow.io) · [Clients](https://budotsmediaph.co)
 
+## Found online — Green Concepts channel & Facebook (added 2026-07-05)
+
+Budots Media PH is the credited capture partner of [Green Concepts and Events](https://www.youtube.com/@greenconceptsandevents2681), a Cebu events company. Events from their channel (⭐ = explicit "Budots Media PH" credit in the title):
+
+- **2026-05 · Asurion Cebu** — Grand Launch, Bonifacio District — [Video](https://www.youtube.com/watch?v=r0fNkrVoZzA)
+- **2026-05 · Foundever** — Sportsfest 2026 opening ceremony, USJ-R Coliseum — [Video](https://www.youtube.com/watch?v=wyLKykLrCLE)
+- **2026-03 · BIR** — Tax Campaign Kick-Off 2026 — [Video](https://www.youtube.com/watch?v=ix5Ludq3f-k)
+- **2026-02 · Cebu City** — 89th Charter Day Testimonial Dinner, Waterfront — [Video](https://www.youtube.com/watch?v=8ArQKXDYaqc)
+- **2026-02 · ASEAN "Love The Philippines" Regional Showcase** — [Video](https://www.youtube.com/watch?v=LlsayRg1BZY)
+- **2026-01 · Habibi & Shaun** — "From Reel to Real" Siquijor love-story campaign — [Video](https://www.youtube.com/watch?v=zwefqn9bYh8)
+- **2025-08 · Cebu Lechon Festival 2025** — The Mactan Newtown — [Video](https://www.youtube.com/watch?v=_AyqGh-ol2Y) · [Day 1](https://www.youtube.com/watch?v=c0eOGJV_XJE)
+- **2025-06 · Foundever** ⭐ — Cebu Sportsfest 2025 closing & awarding — [Video](https://www.youtube.com/watch?v=eJUHjXpVDxU)
+- **2025-06 · Ascendion x Philtech** — Philippines' first AI-led Global Capability Center launch, Cebu — [Video](https://www.youtube.com/shorts/3jVCLaaKJXo)
+- **2025-05 · Foundever** ⭐ — Cebu Sportsfest 2025, "Captured by Budots Media PH" — [Video](https://www.youtube.com/watch?v=Smt3dLu1438)
+- **2025-05 · DOT7 — DIVE7 Festival Asturias** — new dive-site launch — [Video](https://www.youtube.com/watch?v=vbbxsSYr_-Y) · [Launch film](https://www.youtube.com/watch?v=bPiXL3cdC4A)
+- **2025-02 · Cebu City** — 88th Charter Day "ReIMAGINE Cebu" — [Video](https://www.youtube.com/watch?v=6q9Rmk_EPl0)
+
+From Facebook (pages: [budots.media](https://www.facebook.com/budots.media/) West · [budots.media.ph](https://www.facebook.com/budots.media.ph/) SE Asia · [Budots Media PH](https://www.facebook.com/p/Budots-Media-PH-100086465582477/)):
+
+- **Cebu 3D Map** — map animation — [Video](https://www.facebook.com/budots.media.ph/videos/1447596800303307/)
+- **BUDOTS AI** — video generation using a mix of open-source models — [Post](https://www.facebook.com/budots.media.ph/posts/122199876002050453)
+- **Maps** — Cebu Trans-Central Highway, Pier 88 Liloan "Map of Connections", Mandani Bay — [Pinterest board](https://www.pinterest.com/budotsmedia/project-pitch-maps/)
+- **Brides of Triton** — JPark Wedding Expo film — [Video](https://www.facebook.com/cebu.lapu2/videos/1015805990550210/)
+
+From the archived budotsmediaph.com (June 2025 snapshot, now mirrored at [/showcase/](https://barts83eu.github.io/budotsmediaph-202606-fable5/showcase/)): production for foreign video crews (Japan, Korea) · teams in Cebu, Palawan and Mindanao (from 2025) · LGU projects in 5+ provinces via PhilGEPS · product launches with Green Concepts Cebu · brands: Cebu News, Aerial Data Ops, Philippines Travel Company.
+
 ## Founder initiatives (Bart Sakwerda)
 
 - **2020-08 · Budots Media PH production house** — Established in Lapu-Lapu City — [About](https://budotsmediaph.co)

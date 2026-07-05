@@ -6,6 +6,26 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://barts83eu.github.io/budotsmediaph-202606-fable5/stories/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://barts83eu.github.io/budotsmediaph-202606-fable5/projects/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://barts83eu.github.io/budotsmediaph-202606-fable5/ai/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://barts83eu.github.io/budotsmediaph-202606-fable5/showcase/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://barts83eu.github.io/budotsmediaph-202606-fable5/stories/ai-agents.html</loc>
     <lastmod>2026-07-05</lastmod>
     <priority>0.8</priority>
