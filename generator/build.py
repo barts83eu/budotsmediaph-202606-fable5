@@ -304,6 +304,23 @@ PAGES["community-initiatives.html"] = dict(
 """,
 )
 
+
+PAGES["dot-love-philippines.html"] = dict(
+    TITLE="DOT — Love the Philippines", H1="Love the<br>Philippines",
+    KICKER="Department of Tourism", HERO=IMG["collage"],
+    DESC="Budots Media's work for the Philippine Department of Tourism under the Love the Philippines campaign: DOT7, FMA7, RIDE7, DIVE7 and a decade of destination stories.",
+    BODY=f"""
+<p class="kicker">Client — Philippine Department of Tourism</p>
+<p class="lead">In June 2023 the Department of Tourism retired "It's More Fun in the Philippines" and unveiled <strong>Love the Philippines</strong> — chosen because "love" ranked first among words the world associates with the country. For Budots Media it was less a new brief than a new name for what we had been filming all along.</p>
+<p>Our DOT portfolio runs deepest in Region 7 — Central Visayas — where we produce and steward media for <strong>DOT7</strong> and its verticals: <strong>FMA7</strong> (Filipino Martial Arts, including the Eskrima Tour of Cebu), <strong>RIDE7</strong> (motorsports) and <strong>DIVE7</strong> (scuba). Beyond campaigns, we maintain DOT7's long-term media library — the archive a region draws on every time it needs to show itself to the world.</p>
+{{img('collage','Aerial and destination work across the Philippines by Budots Media')}}
+<blockquote>A slogan asks the world to love the Philippines. Footage is the argument.</blockquote>
+<p>The campaign's premise — that the country is more than fun: natural assets, storied history, deep culture — is the same premise behind our maps, our drone surveys and our island stories. Kalanggaman sandbars, Camiguin resorts, Eskrima lineages, outrigger canoes: destination marketing works when the material is real.</p>
+<p>Explore the provinces yourself on our <a href="../index.html#assets" style="color:var(--accent)">clickable map of the Philippines</a>, or read the <a href="dot7-eskrima-tour.html" style="color:var(--accent)">Eskrima Tour of Cebu</a> story.</p>
+<p><em>[Draft — add specific Love the Philippines-era deliverables via an .md file in the instructions folder and this page will be extended.]</em></p>
+""",
+)
+
 for name, page in PAGES.items():
     html = T
     for key in ("TITLE", "DESC", "HERO", "H1", "KICKER", "BODY"):

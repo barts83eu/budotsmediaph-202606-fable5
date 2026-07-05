@@ -233,3 +233,7 @@ article.story blockquote {
 .logowall .chip.on-dark { background: #14161a; }
 .logowall .chip.on-light { background: #fff; border: 1px solid #e2e2e2; }
 @media (max-width: 640px) { .logowall .chip { height: 48px; padding: 7px 12px; } }
+
+/* ---- Philippines provinces map (Assets section) ---- */
+.phmap { display:flex; justify-content:center; margin-top:2.5rem; }
+.phmap object { width:min(560px,92vw); height:auto; aspect-ratio:700/1085; filter:drop-shadow(0 10px 30px rgba(0,0,0,.45)); }
