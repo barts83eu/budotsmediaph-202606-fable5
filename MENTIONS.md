@@ -16,7 +16,7 @@ Format: `TYPE · DATE · SOURCE — context — link`. ✔ = mention text verifi
 
 ## Related third-party coverage (event covered, company not named in text)
 
-- **news · 2021-04 · Cebu Daily News / Inquirer** ✔(checked: no direct mention) — Cleevan Alegres' historic Mactan swim, documented by Budots Media per Wikipedia; article text does not name the company — https://cebudailynews.inquirer.net/374799/cebus-merman-makes-history-completes-swim-around-mactan-island (also /369848, /374461)
+- **news · 2021-04 · Cebu Daily News / Inquirer** ✔(checked: no direct mention) — "Cebu's 'Little Merman' makes history": Cleevan Alegres' Mactan circumnavigation swim, documented by Budots Media per Wikipedia; article text does not name the company. Now referenced from our story page [/stories/cleevan-alegres.html](https://barts83eu.github.io/budotsmediaph-202606-fable5/stories/cleevan-alegres.html) — https://cebudailynews.inquirer.net/374799/cebus-merman-makes-history-completes-swim-around-mactan-island (also /369848, /374461)
 - **news · 2021-04 · The Manila Times** ○ — same swim coverage — https://www.manilatimes.net/2021/04/25/sports/alegres-attempts-to-become-1st-man-to-swim-around-mactan-island/867203/
 - **tourism blog · — · CebuTrip** ○ — Alegres swim feature; also lists Haejeok Hopping (a Budots client) — https://cebutrip.net/en-us/local/view/cleevan-alegres-swim-challenge
 

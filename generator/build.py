@@ -321,6 +321,20 @@ PAGES["dot-love-philippines.html"] = dict(
 """,
 )
 
+PAGES["cleevan-alegres.html"] = dict(
+    TITLE="Cleevan Alegres — The Little Merman", H1="The Little<br>Merman",
+    KICKER="2021 · First Swim Around Mactan", HERO="../assets/img/budotsmediaph-com/underwater.webp",
+    DESC="Cleevan Alegres, Cebu's Little Merman, became the first person to swim around Mactan Island — 17 hours 37 minutes in April 2021. Budots Media documented the journey.",
+    BODY=f"""
+<p class="kicker">Quincentennial · Marine Advocacy</p>
+<p class="lead">At 5 p.m. on April 25, 2021, a 25-year-old open-water swimmer from Barangay Maribago slipped into the sea at Punta Engaño. At 10:37 the next morning he walked out of the water at the Liberty Shrine — the first person ever to swim around Mactan Island. His name is Cleevan Alegres. Cebu calls him the Little Merman.</p>
+<p>The numbers: more than 40 kilometers of open water, 17 hours, 37 minutes and 35 seconds of continuous swimming, through the night, past currents, sisi shells and sea urchins. "I had cuts from my hands and I can barely move it now," he told reporters at the finish. He swam anyway — because the date mattered. The circumnavigation was his tribute to Datu Lapu-Lapu on the 500th anniversary of the Victory at Mactan.</p>
+<blockquote>One man, one island, seventeen and a half hours. The kind of story our home waters write on their own — we just had to be there with the cameras.</blockquote>
+<p>It was also an advocacy swim: Alegres and his support crew collected garbage along the way, turning the feat into a statement on plastic pollution and marine conservation. Lapu-Lapu City rallied behind him — Mactan Electric Company put up an incentive, and the city moved to honor him. Weeks earlier he had warmed up with a 19–21 km practice swim around Olango Island, the same reef-fringed waters where the <a href="olango-practice.html" style="color:var(--accent)">Philippine Outrigger Canoe Club trains</a>.</p>
+<p>Budots Media documented the journey — our production house sits in the same barangay Alegres calls home, and 2021 was the year our cameras followed everything that moved on these waters: the <a href="big-canoe.html" style="color:var(--accent)">227 km OC6 expedition</a>, the paddlers, and one swimmer who refused to stop.</p>
+<p><em>Press coverage: <a href="https://cebudailynews.inquirer.net/374799/cebus-merman-makes-history-completes-swim-around-mactan-island" style="color:var(--accent)">Cebu Daily News — "Cebu's 'Little Merman' makes history"</a> · <a href="https://cebudailynews.inquirer.net/369848/oponganon-to-make-historic-swim-around-mactan-island-on-april-24" style="color:var(--accent)">CDN preview</a> · <a href="https://www.manilatimes.net/2021/04/25/sports/alegres-attempts-to-become-1st-man-to-swim-around-mactan-island/867203/" style="color:var(--accent)">The Manila Times</a></em></p>
+""")
+
 for name, page in PAGES.items():
     html = T
     for key in ("TITLE", "DESC", "HERO", "H1", "KICKER", "BODY"):
