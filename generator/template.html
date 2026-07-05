@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{TITLE}} — Budots Media PH</title>
+<meta name="description" content="{{DESC}}">
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<div id="progress"></div>
+<canvas id="particles"></canvas>
+
+<nav class="nav">
+  <a class="brand" href="../index.html" style="display:flex;align-items:center;gap:.6rem"><img src="../assets/img/logos/budotsmedia-logo.svg" alt="Budots Media logo" style="height:34px">BUDOTS<span> MEDIA</span> PH</a>
+  <div class="links">
+    <a href="../index.html#stories">Stories</a>
+    <a href="../index.html#history">History</a>
+    <a href="../index.html#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero" style="height:72svh;min-height:420px">
+  <div class="bg" data-parallax="0.35" style="background-image:url('{{HERO}}')"></div>
+  <h1 style="font-size:clamp(2.6rem,9vw,6.5rem)">{{H1}}</h1>
+  <p class="sub">{{KICKER}}</p>
+  <div class="scroll-ind"><div class="mouse"></div><span>Scroll</span></div>
+</header>
+
+<article class="story">
+{{BODY}}
+<a class="backlink" href="../index.html#stories">← All stories</a>
+</article>
+
+<footer>
+  <div class="brandline">BUDOTS MEDIA PHILIPPINES</div>
+  <small>© 2026 Budots Media. Founded by Bart Sakwerda.</small>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

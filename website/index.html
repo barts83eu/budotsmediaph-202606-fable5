@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BUDOTS MEDIA PHILIPPINES — Stories, Media, AI</title>
+<meta name="description" content="Budots Media Philippines — media production house in Lapu-Lapu City, Cebu. Founded 2014 by Bart Sakwerda. Video, drones, maps, data visualization and sovereign Filipino AI.">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="progress"></div>
+<canvas id="particles"></canvas>
+
+<nav class="nav">
+  <a class="brand" href="index.html" style="display:flex;align-items:center;gap:.6rem"><img src="assets/img/logos/budotsmedia-logo.svg" alt="Budots Media logo" style="height:34px">BUDOTS<span> MEDIA</span> PH</a>
+  <div class="links">
+    <a href="#stories">Stories</a>
+    <a href="#history">History</a>
+    <a href="stories/maps.html">Maps</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="dots"></div>
+
+<!-- HERO -->
+<header class="hero" id="top" data-dot="Top">
+  <div class="bg" data-parallax="0.35" style="background-image:url('https://cdn.shopify.com/s/files/1/0531/1099/7154/files/20210613_-_DRONE_DAY2_-072_1_2048x2048.jpg?v=1625890534')"></div>
+  <h1>Budots Media<br>Philippines</h1>
+  <p class="sub">Stories · Drones · Maps · AI</p>
+  <img src="https://cdn.prod.website-files.com/60d23ed0ea65be0cdbf4ea0e/60d38fe48e4d5c3e65c5e0c8_budotsmedia-drone-dji-protek35.png" alt="DJI drone" data-parallax="0.55" style="position:absolute;width:min(180px,28vw);right:6%;top:18%;z-index:1;filter:drop-shadow(0 12px 24px rgba(0,0,0,.5))">
+  <img src="https://cdn.prod.website-files.com/60d23ed0ea65be0cdbf4ea0e/60d271ce9c897832196db251_oc6-boat-mini.png" alt="OC6 outrigger canoe" data-parallax="0.15" style="position:absolute;width:min(220px,34vw);left:4%;bottom:14%;z-index:1;filter:drop-shadow(0 12px 24px rgba(0,0,0,.5))">
+  <div class="scroll-ind"><div class="mouse"></div><span>Scroll</span></div>
+</header>
+
+<!-- MISSION -->
+<section class="section" id="mission" data-dot="Mission">
+  <h2 class="reveal">Mission</h2>
+  <p class="lead reveal">We turn the Philippines into stories the world can see. From a production house in Lapu-Lapu City, Cebu, we film, fly, map and animate — and now we build AI. Our priority: a sovereign Filipino language model and a multimodal generative AI that speaks Cebuano and Tagalog natively.</p>
+  <div class="stats reveal">
+    <div class="stat"><div class="num" data-count="2014">0</div><div class="cap">Founded</div></div>
+    <div class="stat"><div class="num" data-count="8">0</div><div class="cap">Languages</div></div>
+    <div class="stat"><div class="num" data-count="3">0</div><div class="cap">Offices — PH · PL · UK</div></div>
+    <div class="stat"><div class="num" data-count="227">0</div><div class="cap">KM paddled around Cebu</div></div>
+  </div>
+</section>
+
+<!-- PARALLAX BANNER -->
+<div class="banner">
+  <div class="bg" data-parallax="0.25" style="background-image:url('https://bartsakwerda.com/wp-content/uploads/2023/08/bart-sakwerda-drone-photogrammetry-portfolio.png')"></div>
+  <h3>From Cebu to Riyadh, Dubai, Singapore &amp; Kuala Lumpur</h3>
+</div>
+
+<!-- STORIES -->
+<section class="section" id="stories" data-dot="Stories">
+  <h2 class="reveal">Individual Stories</h2>
+  <p class="lead reveal">Long-form stories we lived, filmed and published.</p>
+  <div class="grid" style="margin-top:2.5rem">
+    <a class="card reveal" href="stories/history.html" style="background-image:url('https://bartsakwerda.com/wp-content/uploads/2023/06/201831b3-cb2a-4471-ac83-29bc2869c269.jpg')">
+      <div class="label"><div class="kicker">2014 → today</div><h3>Our History</h3></div>
+    </a>
+    <a class="card reveal" href="stories/ai-filipino-llm.html" style="background-image:url('https://bartsakwerda.com/wp-content/uploads/2023/09/screenshot-2023-12-19-155931.png')">
+      <div class="label"><div class="kicker">Sovereign AI</div><h3>A Filipino Language Model</h3></div>
+    </a>
+    <a class="card reveal" href="stories/ai-agents.html" style="background-image:url('https://bartsakwerda.com/wp-content/uploads/2024/04/screenshot-2024-04-07-163128.png')">
+      <div class="label"><div class="kicker">Production 2.0</div><h3>AI Agents in the Edit Bay</h3></div>
+    </a>
+    <a class="card reveal" href="stories/drone-aerial.html" style="background-image:url('https://bartsakwerda.com/wp-content/uploads/2023/08/bart-sakwerda-drone-photogrammetry-portfolio.png')">
+      <div class="label"><div class="kicker">Aerial</div><h3>Drones &amp; Surveys</h3></div>
+    </a>
+    <a class="card reveal" href="stories/maps.html" style="background-image:url('https://cdn.prod.website-files.com/60d23ed1ea65be4525f4ea1f/648fe655fd1699ec8b20c8d3_city_lights_asia_night_8k.jpg')">
+      <div class="label"><div class="kicker">Cartography</div><h3>Philippines in Maps</h3></div>
+    </a>
+    <a class="card reveal" href="stories/big-canoe.html" style="background-image:url('https://cdn.shopify.com/s/files/1/0531/1099/7154/files/20210621_-_DRONE_DAY3_PHOTOS_SUMILON_-039_2048x2048.jpg?v=1625890843')">
+      <div class="label"><div class="kicker">Community · Sports</div><h3>Big Canoe, Bigger Dream</h3></div>
+    </a>
+    <a class="card reveal" href="stories/buzzy-budlong.html" style="background-image:url('https://cdn.shopify.com/s/files/1/0531/1099/7154/files/RAP_4732_2048x2048.jpg?v=1625890069')">
+      <div class="label"><div class="kicker">Portrait</div><h3>Buzzy Budlong</h3></div>
+    </a>
+    <a class="card reveal" href="stories/plank-g.html" style="background-image:url('https://cdn.shopify.com/s/files/1/0531/1099/7154/files/20210616-Paddle_Forward_Cebu_Day_5-034_2048x2048.jpg?v=1625890233')">
+      <div class="label"><div class="kicker">Portrait</div><h3>Mary Grace “Plank G”</h3></div>
+    </a>
+    <a class="card reveal" href="stories/ironman.html" style="background-image:url('https://cdn.shopify.com/s/files/1/0531/1099/7154/files/20210613_-_DRONE_DAY2_-005_2048x2048.jpg?v=1625890160')">
+      <div class="label"><div class="kicker">Endurance</div><h3>Ironman Philippines</h3></div>
+    </a>
+    <a class="card reveal" href="stories/olango-practice.html" style="background-image:url('https://lh3.googleusercontent.com/pw/AP1GczOsP2lrRkOnDYRo7jbJtRSI8YmwZ-PiLZG6eeaNeEGUNmgBtiFHYSIzj4TemzZ9a8D93DdaWel_aDh3m0UHZyCQD3UMqb90a8BurcwzIWd9ymjyadMc=w1200')">
+      <div class="label"><div class="kicker">Island Buzz · POCC</div><h3>Practice at Olango</h3></div>
+    </a>
+    <a class="card reveal" href="stories/games-dev.html" style="background-image:url('https://bartsakwerda.com/wp-content/uploads/2024/04/screenshot-2024-04-07-163128.png')">
+      <div class="label"><div class="kicker">Boracay GameDev Summit</div><h3>Games, Made in the PH</h3></div>
+    </a>
+    <a class="card reveal" href="stories/cinduy-wedding.html" style="background-image:url('https://bartsakwerda.com/wp-content/uploads/2023/06/201831b3-cb2a-4471-ac83-29bc2869c269.jpg')">
+      <div class="label"><div class="kicker">Weddings · 2026</div><h3>Cinduy Cinco</h3></div>
+    </a>
+    <a class="card reveal" href="stories/lapulapu-projects.html" style="background-image:url('https://cdn.prod.website-files.com/60d23ed1ea65be4525f4ea1f/6644e76ace81835b560ca739_budotsmedia-jpark-lapulapucity-2024.jpg')">
+      <div class="label"><div class="kicker">Home Turf</div><h3>Made in Lapu-Lapu</h3></div>
+    </a>
+    <a class="card reveal" href="stories/brand-protection.html" style="background-image:url('https://bartsakwerda.com/wp-content/uploads/2024/05/417186906_814731500666278_48153751899014281_n.jpg')">
+      <div class="label"><div class="kicker">Opinion</div><h3>Defending a Brand</h3></div>
+    </a>
+    <a class="card reveal" href="stories/brides-of-triton.html" style="background-image:url('https://static.wixstatic.com/media/acad74_8a4330c55256451797c1d925232d3b17~mv2.jpg/v1/fit/w_2500,h_1330,al_c/acad74_8a4330c55256451797c1d925232d3b17~mv2.jpg')">
+      <div class="label"><div class="kicker">Weddings · JPARK</div><h3>Brides at Triton</h3></div>
+    </a>
+    <a class="card reveal" href="stories/dot7-eskrima-tour.html" style="background-image:url('https://bartsakwerda.com/wp-content/uploads/2023/08/bart-sakwerda-drone-photogrammetry-portfolio.png')">
+      <div class="label"><div class="kicker">FMA7</div><h3>The Eskrima Tour of Cebu</h3></div>
+    </a>
+    <a class="card reveal" href="stories/community-initiatives.html" style="background-image:url('https://bartsakwerda.com/wp-content/uploads/2023/06/201831b3-cb2a-4471-ac83-29bc2869c269.jpg')">
+      <div class="label"><div class="kicker">Founder</div><h3>Beyond Budots Media</h3></div>
+    </a>
+  </div>
+</section>
+
+<!-- HISTORY -->
+<section class="section" id="history" data-dot="History">
+  <h2 class="reveal">History</h2>
+  <div class="timeline">
+    <div class="tl-item reveal"><div class="year">2014</div><p>Bart Sakwerda founds BUDOTS MEDIA during the rehabilitation period after Typhoon Haiyan — first in Budlaan, then Banilad, Cebu.</p></div>
+    <div class="tl-item reveal"><div class="year">2015</div><p>Office relocates to Maribago, Lapu-Lapu City.</p></div>
+    <div class="tl-item reveal"><div class="year">2016</div><p>BUDOTS MEDIA LONDON — offices on Hackney and Camden High Street (until 2020).</p></div>
+    <div class="tl-item reveal"><div class="year">2020</div><p>COVID-era expansion: full production house established in Lapu-Lapu City. Work continues when the world stops.</p></div>
+    <div class="tl-item reveal"><div class="year">2023</div><p>Post-ChatGPT pivot into AI. Clients in Saudi Arabia; growth focus on Arabia, India and SE Asia. European Structural Funds access via BUDOTS MEDIA POLAND.</p></div>
+    <div class="tl-item reveal"><div class="year">Now</div><p>Priority: sovereign Filipino language model and multimodal generative AI. Games, maps, data visualization, aerial surveys.</p></div>
+  </div>
+  <a class="backlink" href="stories/history.html">Read the full story →</a>
+</section>
+
+<!-- BANNER -->
+<div class="banner">
+  <div class="bg" data-parallax="0.25" style="background-image:url('https://cdn.shopify.com/s/files/1/0531/1099/7154/files/20210613_-_DRONE_DAY2_-043_2048x2048.jpg?v=1625889218')"></div>
+  <h3>“The bigger the canoe, the bigger the dream.”</h3>
+</div>
+
+<!-- PORTFOLIO / light zone -->
+<section class="section light" id="portfolio" data-dot="Portfolio">
+  <h2 class="reveal">Portfolio</h2>
+  <p class="lead reveal">Philippines Department of Tourism · DOT Region 7 (FMA7, RIDE7, DIVE7) · BYD · JPARK Island Resort · NUSTAR Resort &amp; Casino · Savoy Hotel Mactan Newtown · Megaworld · Belmont Hotel · Nouveau Resort Camiguin · Aboitiz Foundation · CCLEX · LGU projects in 5+ provinces via PhilGEPS bidding.</p>
+  <p class="reveal">Our ecosystem of intellectual properties: <strong>Kalanggaman.com</strong> (Philippines tourism), Philippines MICE event directory, Cebu News, Aerial Data Ops, Philippines Travel Company.</p>
+  <p class="reveal">Long-term relationships: media library stewardship for DOT7, long-running Brides at Triton wedding expo with JPARK, and multi-year aerial/media coverage for Camiguin Resorts.</p>
+  <div class="logowall reveal">
+    <div class="chip on-dark"><img src="assets/img/logos/dot-philippines.png" alt="Philippines Department of Tourism" title="Philippines Department of Tourism"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/jpark-island-resort.png" alt="JPark Island Resort &amp; Waterpark" title="JPark Island Resort &amp; Waterpark"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/nustar.png" alt="NUSTAR Resort &amp; Casino" title="NUSTAR Resort &amp; Casino"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/savoy-hotel-mactan-newtown.png" alt="Savoy Hotel Mactan Newtown" title="Savoy Hotel Mactan Newtown"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/mactan-newtown.png" alt="The Mactan Newtown" title="The Mactan Newtown"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/megaworld.png" alt="Megaworld" title="Megaworld"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/belmont-hotel-mactan.png" alt="Belmont Hotel Mactan" title="Belmont Hotel Mactan"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/nouveau-resort-camiguin.png" alt="Nouveau Resort Camiguin" title="Nouveau Resort Camiguin"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/brides-at-triton.png" alt="The Brides at Triton Wedding Expo" title="The Brides at Triton Wedding Expo"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/byd.png" alt="BYD" title="BYD"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/harley-davidson.png" alt="Harley-Davidson of Cebu" title="Harley-Davidson of Cebu"></div>
+    <div class="chip on-light"><img src="assets/img/logos/motul.png" alt="Motul Philippines" title="Motul Philippines"></div>
+    <div class="chip on-light"><img src="assets/img/logos/gatorade.png" alt="Gatorade 3D render" title="Gatorade 3D render"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/cclex.png" alt="CCLEX" title="CCLEX"></div>
+    <div class="chip on-light"><img src="assets/img/logos/cordova.png" alt="Municipality of Cordova" title="Municipality of Cordova"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/aboitiz-foundation.png" alt="Aboitiz Foundation" title="Aboitiz Foundation"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/jpmorganchase.png" alt="JPMorganChase" title="JPMorganChase"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/accenture.png" alt="Accenture" title="Accenture"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/dexcom.png" alt="Dexcom" title="Dexcom"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/ascendion.png" alt="Ascendion" title="Ascendion"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/conduent.png" alt="Conduent" title="Conduent"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/foundever.png" alt="Foundever" title="Foundever"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/aetrex.png" alt="Aetrex" title="Aetrex"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/condura.png" alt="Condura" title="Condura"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/paramount-life.png" alt="Paramount Life &amp; General Insurance" title="Paramount Life &amp; General Insurance"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/primer-group.png" alt="Primer Group of Companies" title="Primer Group of Companies"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/ipg-mb.png" alt="IPG Mediabrands" title="IPG Mediabrands"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/odv-creative.png" alt="ODV Creative" title="ODV Creative"></div>
+    <div class="chip on-light"><img src="assets/img/logos/gordon-ramsay-fish-and-chips.png" alt="Gordon Ramsay Fish &amp; Chips" title="Gordon Ramsay Fish &amp; Chips"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/street-burger.png" alt="Street Burger by Gordon Ramsay" title="Street Burger by Gordon Ramsay"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/haejeok-hopping.png" alt="Haejeok Hopping" title="Haejeok Hopping"></div>
+    <div class="chip on-dark"><img src="assets/img/logos/aquila-legis.png" alt="Aquila Legis" title="Aquila Legis"></div>
+    <div class="chip on-light"><img src="assets/img/logos/pocc.jpg" alt="Philippine Outrigger Canoe Club" title="Philippine Outrigger Canoe Club"></div>
+    <div class="chip on-light"><img src="assets/img/logos/island-buzz.png" alt="Island Buzz Philippines" title="Island Buzz Philippines"></div>
+    <div class="chip on-light"><img src="assets/img/logos/akaw.svg" alt="Akaw Surf" title="Akaw Surf"></div>
+    <div class="chip on-light"><img src="assets/img/logos/cebu-news.jpg" alt="Cebu News" title="Cebu News"></div>
+    <div class="chip on-light"><img src="assets/img/logos/kalanggaman.jpg" alt="Kalanggaman Island Tours" title="Kalanggaman Island Tours"></div>
+  </div>
+  <div class="langs reveal">
+    <span>English</span><span>Cebuano</span><span>Tagalog</span><span>日本語</span><span>Polski</span><span>中文</span><span>ไทย</span><span>العربية</span>
+  </div>
+</section>
+
+<footer id="contact" data-dot="Contact">
+  <div class="brandline">BUDOTS MEDIA PHILIPPINES</div>
+  <small>Lapu-Lapu City, Cebu · Poland · London<br>
+  <a href="https://facebook.com/budots.media">facebook.com/budots.media</a> · <a href="https://linkedin.com/in/bartsakwerda">linkedin.com/in/bartsakwerda</a> · <a href="https://x.com/bartsakwerda">x.com/bartsakwerda</a></small>
+  <small>© 2026 Budots Media. Founded by Bart Sakwerda.</small>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

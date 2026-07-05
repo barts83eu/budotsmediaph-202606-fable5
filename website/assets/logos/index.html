@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DXSNKZWX0H"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-DXSNKZWX0H');
+        </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budots Media Partners & Clients Showcase</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for beautiful icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BEBAS+NEUE:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fef2f2',
+                            100: '#fee2e2',
+                            200: '#fecaca',
+                            300: '#fca5a5',
+                            400: '#f87171',
+                            500: '#ef4444',
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                            800: '#991b1b',
+                            900: '#7f1d1d',
+                            primary: '#ff3b30'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Modern Marquee styles */
+        .marquee-container {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            mask-image: linear-gradient(to right, transparent, white 15%, white 85%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, white 15%, white 85%, transparent);
+        }
+
+        .marquee-track {
+            display: flex;
+            width: max-content;
+            animation: scroll 40s linear infinite;
+        }
+
+        .marquee-track.reverse {
+            animation: scroll-reverse 40s linear infinite;
+        }
+
+        .marquee-track:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-33.333%);
+            }
+        }
+
+        @keyframes scroll-reverse {
+            0% {
+                transform: translateX(-33.333%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        /* Glassmorphism details */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .dark .glass-panel {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background: #334155;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 font-sans min-h-screen">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 glass-panel border-b transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-brand-primary flex items-center justify-center text-white font-extrabold text-xl shadow-lg shadow-brand-primary/30">
+                    B
+                </div>
+                <div>
+                    <span class="font-extrabold text-lg tracking-tight bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">Budots Media</span>
+                    <span class="text-xs block text-slate-500 dark:text-slate-400 font-medium -mt-1">Logo & Brand Directory</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#demo-marquee" class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-brand-primary dark:hover:text-brand-primary transition">Marquee Banner</a>
+                <a href="#partner-grid" class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-brand-primary dark:hover:text-brand-primary transition">Logo Grid Directory</a>
+                <a href="#embed-code" class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-brand-primary dark:hover:text-brand-primary transition">WordPress & Webflow Code</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="w-10 h-10 rounded-xl flex items-center justify-center bg-slate-100 hover:bg-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-brand-primary" aria-label="Toggle Theme">
+                    <i id="theme-toggle-icon" class="fa-solid fa-moon text-lg"></i>
+                </button>
+                <a href="#embed-code" class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-brand-primary rounded-xl shadow-lg shadow-brand-primary/20 hover:shadow-brand-primary/30 hover:scale-[1.02] active:scale-[0.98] transition-all">
+                    <i class="fa-solid fa-code mr-2 text-xs"></i> Get Embed Code
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-20 pb-16 lg:pt-24 lg:pb-20">
+        <!-- Background light glows -->
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-brand-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <span class="px-3.5 py-1.5 rounded-full text-xs font-bold bg-brand-primary/10 text-brand-primary uppercase tracking-wider mb-4 inline-block">
+                Interactive Showcase
+            </span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white max-w-4xl mx-auto leading-tight">
+                Connect and Display Your <span class="bg-gradient-to-r from-brand-primary via-orange-500 to-red-600 bg-clip-text text-transparent">Partner Network</span>
+            </h1>
+            <p class="mt-6 text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
+                An ultra-smooth, responsive, and beautifully coded logo banner and grid featuring Budots Media's official partners. Click any logo to visit their official website.
+            </p>
+            
+            <div class="mt-10 flex flex-wrap justify-center gap-4">
+                <a href="#demo-marquee" class="px-6 py-3.5 text-base font-semibold text-white bg-slate-900 hover:bg-slate-800 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 rounded-xl shadow-xl transition-all hover:-translate-y-0.5">
+                    <i class="fa-solid fa-play mr-2 text-sm"></i> See Live Banner
+                </a>
+                <a href="#partner-grid" class="px-6 py-3.5 text-base font-semibold text-slate-700 bg-white hover:bg-slate-50 dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all hover:-translate-y-0.5">
+                    Explore Grid (32 Logos)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: Infinite Scroll Marquee Banner -->
+    <section id="demo-marquee" class="py-12 bg-white dark:bg-slate-900 border-y border-slate-200 dark:border-slate-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+            <div>
+                <h2 class="text-2xl font-bold text-slate-900 dark:text-white flex items-center">
+                    <span class="w-2.5 h-6 bg-brand-primary rounded-full mr-3 inline-block"></span>
+                    Infinite Autoplay Logo Marquee
+                </h2>
+                <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Perfect for landing page "Trusted By" or "Our Clients" sections. Pause on hover enabled.</p>
+            </div>
+            
+            <!-- Marquee Controls -->
+            <div class="flex items-center gap-3">
+                <button id="marquee-dir-btn" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-arrows-left-right text-xs"></i> Direction: <span id="marquee-dir-text">Left</span>
+                </button>
+                <div class="flex items-center bg-slate-100 dark:bg-slate-800 p-1 rounded-lg">
+                    <button class="speed-btn px-2.5 py-1 text-xs font-semibold rounded" data-speed="60s">Slow</button>
+                    <button class="speed-btn px-2.5 py-1 text-xs font-semibold rounded bg-white dark:bg-slate-900 text-brand-primary shadow-sm" data-speed="40s">Medium</button>
+                    <button class="speed-btn px-2.5 py-1 text-xs font-semibold rounded" data-speed="20s">Fast</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Marquee Display Container -->
+        <div class="marquee-container py-8 bg-slate-50 dark:bg-slate-950/40 relative">
+            <div id="marquee-track" class="marquee-track">
+                <!-- Programmatically populated logos in loop to ensure smooth loop -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: Responsive Grid Directory with Search & Filtering -->
+    <section id="partner-grid" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+                <div>
+                    <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Partner Directory</h2>
+                    <p class="text-slate-600 dark:text-slate-400 mt-2">Browse the complete ecosystem of partners and organizations. Filter or search instantly.</p>
+                </div>
+                
+                <!-- Search Input -->
+                <div class="relative max-w-md w-full">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <i class="fa-solid fa-magnifying-glass text-slate-400"></i>
+                    </div>
+                    <input type="text" id="search-input" placeholder="Search brands..." class="block w-full pl-10 pr-4 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:ring-2 focus:ring-brand-primary focus:border-brand-primary text-sm shadow-sm transition-colors placeholder-slate-400 text-slate-900 dark:text-white">
+                    <button id="search-clear" class="absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hidden">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logos Grid -->
+        <div id="logos-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
+            <!-- Programmatically populated partner cards -->
+        </div>
+
+        <!-- No Results state -->
+        <div id="no-results" class="hidden text-center py-20 bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800">
+            <div class="w-16 h-16 bg-slate-100 dark:bg-slate-800 rounded-full flex items-center justify-center mx-auto text-slate-400 mb-4 text-xl">
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200">No brands found</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Try adjusting your search query or spelling.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 3: Code Embed Generator (WordPress, Webflow, Shopify) -->
+    <section id="embed-code" class="py-16 bg-slate-100 dark:bg-slate-900/40 border-t border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-5">
+                    <span class="px-3 py-1 rounded-full text-xs font-semibold bg-brand-primary/10 text-brand-primary uppercase tracking-wide">Developer Friendly</span>
+                    <h2 class="text-3xl font-bold text-slate-900 dark:text-white mt-4">Integrate This Banner Into Your Website</h2>
+                    <p class="text-slate-600 dark:text-slate-400 mt-4 leading-relaxed">
+                        Need this sliding partner banner on your WordPress, Webflow, Shopify, or Custom HTML site? We've bundled the optimized code below. Just copy the code and paste it into your site.
+                    </p>
+                    
+                    <div class="mt-6 space-y-3.5">
+                        <div class="flex items-start space-x-3">
+                            <div class="mt-1 w-5 h-5 rounded-full bg-emerald-500/10 text-emerald-500 flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="text-sm text-slate-700 dark:text-slate-300"><strong>Infinite scroll animation</strong> optimized for high performance</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="mt-1 w-5 h-5 rounded-full bg-emerald-500/10 text-emerald-500 flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="text-sm text-slate-700 dark:text-slate-300"><strong>Hover-to-pause effect</strong> keeps user engagement high</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="mt-1 w-5 h-5 rounded-full bg-emerald-500/10 text-emerald-500 flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="text-sm text-slate-700 dark:text-slate-300"><strong>Clickable logos</strong> with correct target parameters</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-900 dark:bg-black rounded-2xl border border-slate-800 shadow-2xl overflow-hidden">
+                        <div class="flex items-center justify-between px-6 py-4 border-b border-slate-800">
+                            <div class="flex items-center space-x-2">
+                                <span class="w-3 h-3 bg-red-500 rounded-full inline-block"></span>
+                                <span class="w-3 h-3 bg-yellow-500 rounded-full inline-block"></span>
+                                <span class="w-3 h-3 bg-green-500 rounded-full inline-block"></span>
+                                <span class="text-slate-400 font-mono text-xs ml-2">partner-banner-embed.html</span>
+                            </div>
+                            <button id="copy-btn" class="text-slate-400 hover:text-white text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-800 hover:border-slate-700 hover:bg-slate-800 transition flex items-center gap-2">
+                                <i class="fa-regular fa-copy"></i> <span>Copy Code</span>
+                            </button>
+                        </div>
+                        <div class="p-6">
+                            <textarea id="code-box" readonly class="w-full h-80 bg-transparent text-slate-300 font-mono text-xs focus:outline-none resize-none leading-relaxed overflow-y-auto">
+<!-- Copy-paste this widget block to your website's HTML/Embed element -->
+<div class="bm-partner-widget">
+    <style>
+        .bm-marquee-container {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            padding: 24px 0;
+            background: #ffffff;
+            border-top: 1px solid #f1f5f9;
+            border-bottom: 1px solid #f1f5f9;
+            mask-image: linear-gradient(to right, transparent, white 15%, white 85%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, white 15%, white 85%, transparent);
+        }
+        .bm-marquee-track {
+            display: flex;
+            width: max-content;
+            animation: bm-scroll 45s linear infinite;
+        }
+        .bm-marquee-track:hover {
+            animation-play-state: paused;
+        }
+        .bm-marquee-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 40px;
+            height: 70px;
+            transition: all 0.3s ease;
+        }
+        .bm-marquee-link img {
+            max-height: 100%;
+            max-width: 150px;
+            object-fit: contain;
+            filter: grayscale(100%) opacity(60%);
+            transition: all 0.3s ease;
+        }
+        .bm-marquee-link:hover img {
+            filter: grayscale(0%) opacity(100%) scale(1.08);
+        }
+        @keyframes bm-scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-33.333%); }
+        }
+    </style>
+
+    <div class="bm-marquee-container">
+        <div class="bm-marquee-track" id="bm-track">
+            <!-- Dynamic Partner Links populate here -->
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            const pathPrefix = window.location.origin + '/'; // Adjust prefix path if images are in subfolder
+            const items = [
+                { name: "Aboitiz Foundation", logo: "aboitiz-foundation-philippines.png", url: "https://aboitizfoundation.org/" },
+                { name: "Accenture", logo: "accenture-bw-logo.png", url: "https://www.accenture.com/" },
+                { name: "Aetrex", logo: "aetrex-logo-bw.png", url: "https://www.aetrex.com/" },
+                { name: "Ascendion", logo: "ascendion-logo-bw.png", url: "https://ascendion.com/" },
+                { name: "AsiaVox", logo: "asiavox-logo-budotsmedia.gif", url: "https://www.asiavox.com/" },
+                { name: "Belmont Hotel Mactan", logo: "belmont-hotel-mactan.png", url: "https://www.belmontresortmactan.com.ph/" },
+                { name: "Brides of Triton", logo: "brides-of-triton-logo-bw.png", url: "https://www.facebook.com/bridesoftriton" },
+                { name: "Jpark Island Resort", logo: "budotdsmediaphilippines-bw-logo-jpark-resort.png", url: "https://www.jparkislandresort.com/" },
+                { name: "Paramount Life Insurance", logo: "budotsmedia-paramout-life-insurance.png", url: "https://www.paramount.com.ph/" },
+                { name: "Triumph Motorcycles", logo: "budotsmedia-philippines-triumph-motors.png", url: "https://www.triumphmotorcycles.com.ph/" },
+                { name: "Be Hotels and Resorts", logo: "budotsmediaph-behotelresorts.png", url: "https://www.behotelsandresorts.com/" },
+                { name: "Gordon Ramsay Street Burger", logo: "budotsmediaph-gordonramsey-streetburger.png", url: "https://www.gordonramsayrestaurants.com/street-burger/" },
+                { name: "BYD Auto", logo: "byd-cars-logo.png", url: "https://bydcarsphilippines.com/" },
+                { name: "CCLEX", logo: "cclex-logo-bw.png", url: "https://cclex.com.ph/" },
+                { name: "Club Cebu Hopping", logo: "club-cebu-hopping-logo.png", url: "https://www.facebook.com/cebuhopping/" },
+                { name: "Conduent", logo: "conduent-logo.png", url: "https://www.conduent.com/" },
+                { name: "Condura Philippines", logo: "condura-logo-bw.png", url: "https://www.condura.com.ph/" },
+                { name: "Department of Tourism Philippines", logo: "department-tourism-philippines-bw-logo.png", url: "https://tourism.gov.ph/" },
+                { name: "Dexcom", logo: "dexcom-logo-bw.png", url: "https://www.dexcom.com/" },
+                { name: "Dextra Group Philippines", logo: "dextra-philippines-logo-budotsmediaph.png", url: "https://www.dextragroup.com/" },
+                { name: "Foundever", logo: "foundever-logo-bw.png", url: "https://foundever.com/" },
+                { name: "Gordon Ramsay Fish & Chips", logo: "gordon-ramsey-fish-chips-logo.png", url: "https://www.gordonramsayrestaurants.com/gordon-ramsay-fish-and-chips/" },
+                { name: "Haejok Hopping", logo: "haejok-hopping-philippines-logo-bw.png", url: "https://www.facebook.com/haejoktour/" },
+                { name: "Harley-Davidson Philippines", logo: "harldeydavidson-logo-philippines-budotsmedia.png", url: "https://www.harley-davidson.com/ph/en/index.html" },
+                { name: "JPMorgan Chase", logo: "jpomrganchase-logo-bw.png", url: "https://www.jpmorganchase.com/" },
+                { name: "The Mactan Newtown", logo: "mactan-new-town-logo-bw.png", url: "https://www.megaworldcorp.com/townships/mactan-newtown" },
+                { name: "Megaworld Corporation", logo: "megaworld-lgoo-bw.png", url: "https://www.megaworldcorp.com/" },
+                { name: "Nouveau Resort Camiguin", logo: "nouveau-resort-camiguin.png", url: "https://nouveauresort.com/" },
+                { name: "NUSTAR Resort & Casino", logo: "nustar-resort-casino-logo-bw.png", url: "https://www.nustar.ph/" },
+                { name: "ODV Creative", logo: "odv-creative.png", url: "https://odvcreative.com/" },
+                { name: "Municipality of Cordova", logo: "philippines-municipality-cordova-logo-bw-budtsmediaphilippines.png", url: "https://cordova.gov.ph/" },
+                { name: "Savoy Hotel Mactan", logo: "savoy-hotel-mactan-logo.png", url: "https://www.savoyhotelmactan.com.ph/" }
+            ];
+            
+            // Generate multiple copies to make infinite animation loop perfectly seamless
+            const fullList = [...items, ...items, ...items];
+            const track = document.getElementById('bm-track');
+            
+            fullList.forEach(item => {
+                const link = document.createElement('a');
+                link.href = item.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'bm-marquee-link';
+                link.title = item.name;
+                
+                const img = document.createElement('img');
+                img.src = pathPrefix + item.logo;
+                img.alt = item.name;
+                img.onerror = () => { img.style.display = 'none'; }; // hides broken images
+                
+                link.appendChild(img);
+                track.appendChild(link);
+            });
+        })();
+    </script>
+</div>
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 transition-colors duration-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="w-12 h-12 rounded-2xl bg-brand-primary flex items-center justify-center text-white font-extrabold text-2xl shadow-lg shadow-brand-primary/20 mx-auto mb-4">
+                B
+            </div>
+            <p class="text-slate-800 dark:text-slate-200 font-extrabold text-lg tracking-tight">Budots Media Philippines</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">© 2026 Budots Media. All Rights Reserved. All brand logos and trademarks are properties of their respective owners.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript Logic -->
+    <script>
+        // Partner/Brand Data with corresponding official websites and logos
+        const brands = [
+            {
+                name: "Aboitiz Foundation",
+                logo: "./aboitiz-foundation-philippines.png",
+                url: "https://aboitizfoundation.org/",
+                category: "foundation"
+            },
+            {
+                name: "Accenture",
+                logo: "./accenture-bw-logo.png",
+                url: "https://www.accenture.com/",
+                category: "corporate"
+            },
+            {
+                name: "Aetrex",
+                logo: "./aetrex-logo-bw.png",
+                url: "https://www.aetrex.com/",
+                category: "retail"
+            },
+            {
+                name: "Ascendion",
+                logo: "./ascendion-logo-bw.png",
+                url: "https://ascendion.com/",
+                category: "corporate"
+            },
+            {
+                name: "AsiaVox",
+                logo: "./asiavox-logo-budotsmedia.gif",
+                url: "https://www.asiavox.com/",
+                category: "corporate"
+            },
+            {
+                name: "Belmont Hotel Mactan",
+                logo: "./belmont-hotel-mactan.png",
+                url: "https://www.belmontresortmactan.com.ph/",
+                category: "hospitality"
+            },
+            {
+                name: "Brides of Triton",
+                logo: "./brides-of-triton-logo-bw.png",
+                url: "https://www.facebook.com/bridesoftriton",
+                category: "recreation"
+            },
+            {
+                name: "Jpark Island Resort",
+                logo: "./budotdsmediaphilippines-bw-logo-jpark-resort.png",
+                url: "https://www.jparkislandresort.com/",
+                category: "hospitality"
+            },
+            {
+                name: "Paramount Life Insurance",
+                logo: "./budotsmedia-paramout-life-insurance.png",
+                url: "https://www.paramount.com.ph/",
+                category: "finance"
+            },
+            {
+                name: "Triumph Motorcycles",
+                logo: "./budotsmedia-philippines-triumph-motors.png",
+                url: "https://www.triumphmotorcycles.com.ph/",
+                category: "automotive"
+            },
+            {
+                name: "Be Hotels and Resorts",
+                logo: "./budotsmediaph-behotelresorts.png",
+                url: "https://www.behotelsandresorts.com/",
+                category: "hospitality"
+            },
+            {
+                name: "Gordon Ramsay Street Burger",
+                logo: "./budotsmediaph-gordonramsey-streetburger.png",
+                url: "https://www.gordonramsayrestaurants.com/street-burger/",
+                category: "food"
+            },
+            {
+                name: "BYD Auto",
+                logo: "./byd-cars-logo.png",
+                url: "https://bydcarsphilippines.com/",
+                category: "automotive"
+            },
+            {
+                name: "CCLEX",
+                logo: "./cclex-logo-bw.png",
+                url: "https://cclex.com.ph/",
+                category: "infrastructure"
+            },
+            {
+                name: "Club Cebu Hopping",
+                logo: "./club-cebu-hopping-logo.png",
+                url: "https://www.facebook.com/cebuhopping/",
+                category: "recreation"
+            },
+            {
+                name: "Conduent",
+                logo: "./conduent-logo.png",
+                url: "https://www.conduent.com/",
+                category: "corporate"
+            },
+            {
+                name: "Condura Philippines",
+                logo: "./condura-logo-bw.png",
+                url: "https://www.condura.com.ph/",
+                category: "retail"
+            },
+            {
+                name: "Department of Tourism Philippines",
+                logo: "./department-tourism-philippines-bw-logo.png",
+                url: "https://tourism.gov.ph/",
+                category: "government"
+            },
+            {
+                name: "Dexcom",
+                logo: "./dexcom-logo-bw.png",
+                url: "https://www.dexcom.com/",
+                category: "medical"
+            },
+            {
+                name: "Dextra Group Philippines",
+                logo: "./dextra-philippines-logo-budotsmediaph.png",
+                url: "https://www.dextragroup.com/",
+                category: "infrastructure"
+            },
+            {
+                name: "Foundever",
+                logo: "./foundever-logo-bw.png",
+                url: "https://foundever.com/",
+                category: "corporate"
+            },
+            {
+                name: "Gordon Ramsay Fish & Chips",
+                logo: "./gordon-ramsey-fish-chips-logo.png",
+                url: "https://www.gordonramsayrestaurants.com/gordon-ramsay-fish-and-chips/",
+                category: "food"
+            },
+            {
+                name: "Haejok Hopping",
+                logo: "./haejok-hopping-philippines-logo-bw.png",
+                url: "https://www.facebook.com/haejoktour/",
+                category: "recreation"
+            },
+            {
+                name: "Harley-Davidson Philippines",
+                logo: "./harldeydavidson-logo-philippines-budotsmedia.png",
+                url: "https://www.harley-davidson.com/ph/en/index.html",
+                category: "automotive"
+            },
+            {
+                name: "JPMorgan Chase",
+                logo: "./jpomrganchase-logo-bw.png",
+                url: "https://www.jpmorganchase.com/",
+                category: "finance"
+            },
+            {
+                name: "The Mactan Newtown",
+                logo: "./mactan-new-town-logo-bw.png",
+                url: "https://www.megaworldcorp.com/townships/mactan-newtown",
+                category: "infrastructure"
+            },
+            {
+                name: "Megaworld Corporation",
+                logo: "./megaworld-lgoo-bw.png",
+                url: "https://www.megaworldcorp.com/",
+                category: "infrastructure"
+            },
+            {
+                name: "Nouveau Resort Camiguin",
+                logo: "./nouveau-resort-camiguin.png",
+                url: "https://nouveauresort.com/",
+                category: "hospitality"
+            },
+            {
+                name: "NUSTAR Resort & Casino",
+                logo: "./nustar-resort-casino-logo-bw.png",
+                url: "https://www.nustar.ph/",
+                category: "hospitality"
+            },
+            {
+                name: "ODV Creative",
+                logo: "./odv-creative.png",
+                url: "https://odvcreative.com/",
+                category: "media"
+            },
+            {
+                name: "Municipality of Cordova",
+                logo: "./philippines-municipality-cordova-logo-bw-budtsmediaphilippines.png",
+                url: "https://cordova.gov.ph/",
+                category: "government"
+            },
+            {
+                name: "Savoy Hotel Mactan",
+                logo: "./savoy-hotel-mactan-logo.png",
+                url: "https://www.savoyhotelmactan.com.ph/",
+                category: "hospitality"
+            }
+        ];
+
+        // 1. Theme Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeToggleIcon = document.getElementById('theme-toggle-icon');
+        
+        // Initialize theme based on localStorage or user system preference
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            themeToggleIcon.className = 'fa-solid fa-sun text-lg text-yellow-400';
+        } else {
+            document.documentElement.classList.remove('dark');
+            themeToggleIcon.className = 'fa-solid fa-moon text-lg';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+                themeToggleIcon.className = 'fa-solid fa-moon text-lg';
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+                themeToggleIcon.className = 'fa-solid fa-sun text-lg text-yellow-400';
+            }
+        });
+
+        // 2. Populating the Logo Marquee Banner
+        function populateMarquee() {
+            const track = document.getElementById('marquee-track');
+            track.innerHTML = '';
+            
+            // Triple the items to create a perfectly seamless infinite scroll loop
+            const duplicatedBrands = [...brands, ...brands, ...brands];
+            
+            duplicatedBrands.forEach((brand) => {
+                const link = document.createElement('a');
+                link.href = brand.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'flex items-center justify-center px-10 h-20 group relative transition-all duration-300';
+                link.title = `Visit ${brand.name} Website`;
+                
+                const img = document.createElement('img');
+                img.src = brand.logo;
+                img.alt = `${brand.name} logo`;
+                img.className = 'max-h-12 max-w-[140px] object-contain transition-all duration-500 filter grayscale dark:invert-[0.15] dark:brightness-125 dark:opacity-75 opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 dark:group-hover:invert-0 dark:group-hover:brightness-100';
+                
+                // fallback for image errors
+                img.onerror = () => {
+                    img.style.display = 'none';
+                    const textFallback = document.createElement('span');
+                    textFallback.className = 'text-xs font-semibold text-slate-400 dark:text-slate-500 group-hover:text-brand-primary';
+                    textFallback.textContent = brand.name;
+                    link.appendChild(textFallback);
+                };
+
+                link.appendChild(img);
+                track.appendChild(link);
+            });
+        }
+
+        // Marquee controls behavior
+        const trackEl = document.getElementById('marquee-track');
+        const dirBtn = document.getElementById('marquee-dir-btn');
+        const dirText = document.getElementById('marquee-dir-text');
+        
+        dirBtn.addEventListener('click', () => {
+            if (trackEl.classList.contains('reverse')) {
+                trackEl.classList.remove('reverse');
+                dirText.textContent = 'Left';
+            } else {
+                trackEl.classList.add('reverse');
+                dirText.textContent = 'Right';
+            }
+        });
+
+        const speedBtns = document.querySelectorAll('.speed-btn');
+        speedBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                speedBtns.forEach(b => b.classList.remove('bg-white', 'dark:bg-slate-900', 'text-brand-primary', 'shadow-sm'));
+                btn.classList.add('bg-white', 'dark:bg-slate-900', 'text-brand-primary', 'shadow-sm');
+                trackEl.style.animationDuration = btn.getAttribute('data-speed');
+            });
+        });
+
+        // 3. Populating and Filtering the Partner Grid
+        const searchInput = document.getElementById('search-input');
+        const searchClear = document.getElementById('search-clear');
+        const logosGrid = document.getElementById('logos-grid');
+        const noResults = document.getElementById('no-results');
+
+        function populateGrid(filterText = '') {
+            logosGrid.innerHTML = '';
+            
+            const filteredBrands = brands.filter(brand => 
+                brand.name.toLowerCase().includes(filterText.toLowerCase())
+            );
+
+            if (filteredBrands.length === 0) {
+                noResults.classList.remove('hidden');
+                logosGrid.classList.add('hidden');
+                return;
+            } else {
+                noResults.classList.add('hidden');
+                logosGrid.classList.remove('hidden');
+            }
+
+            filteredBrands.forEach(brand => {
+                const card = document.createElement('a');
+                card.href = brand.url;
+                card.target = '_blank';
+                card.rel = 'noopener noreferrer';
+                card.className = 'group relative flex flex-col items-center justify-between p-6 bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800/60 rounded-2xl shadow-sm hover:shadow-xl hover:border-brand-primary/20 dark:hover:border-brand-primary/20 transition-all duration-300 hover:-translate-y-1 h-[180px]';
+
+                // Logo Container
+                const logoContainer = document.createElement('div');
+                logoContainer.className = 'flex-1 flex items-center justify-center w-full mb-4';
+
+                const img = document.createElement('img');
+                img.src = brand.logo;
+                img.alt = `${brand.name} logo`;
+                img.className = 'max-h-16 max-w-full object-contain filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-105';
+                
+                img.onerror = () => {
+                    img.style.display = 'none';
+                    const icon = document.createElement('i');
+                    icon.className = 'fa-solid fa-briefcase text-3xl text-slate-300 dark:text-slate-700 group-hover:text-brand-primary transition-colors';
+                    logoContainer.appendChild(icon);
+                };
+
+                logoContainer.appendChild(img);
+
+                // Meta Info Container
+                const textContainer = document.createElement('div');
+                textContainer.className = 'text-center w-full';
+
+                const name = document.createElement('span');
+                name.className = 'block font-bold text-xs sm:text-sm text-slate-700 dark:text-slate-300 group-hover:text-brand-primary dark:group-hover:text-brand-primary transition-colors truncate max-w-full';
+                name.textContent = brand.name;
+
+                const category = document.createElement('span');
+                category.className = 'inline-block text-[10px] uppercase tracking-wider text-slate-400 dark:text-slate-500 font-bold mt-1';
+                category.textContent = brand.category;
+
+                textContainer.appendChild(name);
+                textContainer.appendChild(category);
+
+                // Hover decoration line
+                const accentLine = document.createElement('div');
+                accentLine.className = 'absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-1 bg-brand-primary rounded-t-full transition-all duration-300 group-hover:w-2/3';
+
+                card.appendChild(logoContainer);
+                card.appendChild(textContainer);
+                card.appendChild(accentLine);
+                
+                logosGrid.appendChild(card);
+            });
+        }
+
+        // Search Input Events
+        searchInput.addEventListener('input', (e) => {
+            const val = e.target.value;
+            if (val) {
+                searchClear.classList.remove('hidden');
+            } else {
+                searchClear.classList.add('hidden');
+            }
+            populateGrid(val);
+        });
+
+        searchClear.addEventListener('click', () => {
+            searchInput.value = '';
+            searchClear.classList.add('hidden');
+            populateGrid('');
+            searchInput.focus();
+        });
+
+        // 4. Copy to Clipboard Utility
+        const copyBtn = document.getElementById('copy-btn');
+        const codeBox = document.getElementById('code-box');
+
+        copyBtn.addEventListener('click', () => {
+            codeBox.select();
+            navigator.clipboard.writeText(codeBox.value).then(() => {
+                const btnSpan = copyBtn.querySelector('span');
+                const btnIcon = copyBtn.querySelector('i');
+                
+                btnSpan.textContent = 'Copied!';
+                btnIcon.className = 'fa-solid fa-check text-emerald-500';
+                copyBtn.classList.add('border-emerald-500/30', 'bg-emerald-500/10');
+                
+                setTimeout(() => {
+                    btnSpan.textContent = 'Copy Code';
+                    btnIcon.className = 'fa-regular fa-copy';
+                    copyBtn.classList.remove('border-emerald-500/30', 'bg-emerald-500/10');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        });
+
+        // Initialize the elements
+        window.addEventListener('DOMContentLoaded', () => {
+            populateMarquee();
+            populateGrid();
+        });
+    </script>
+</body>
+</html>
