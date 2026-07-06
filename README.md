@@ -61,7 +61,7 @@ Machine-readable: [website/sitemap.xml](website/sitemap.xml) (26 URLs, reference
     ├── community-initiatives/       Bart Sakwerda's community initiatives
     ├── brand-protection/            Defending a Brand
     ├── plank-g/                     Mary Grace — Plank G (draft)
-    └── cinduy-wedding/              The Cinduy Cinco Wedding (draft)
+    └── cindy-wedding/              The Cindy Cinco Wedding (draft)
 ```
 
 Note: the province map links to `provinces/<slug>.html` pages that are not built yet; pages marked *(draft)* carry visible draft markers awaiting owner-supplied facts (see [instructions/build-notes-reference.md](instructions/build-notes-reference.md)).

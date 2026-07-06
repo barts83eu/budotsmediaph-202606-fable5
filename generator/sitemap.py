@@ -26,9 +26,12 @@ pages = [("", WEB / "index.html")]
 for d in ("stories", "projects", "ai", "showcase", "partners"):
     if (WEB / d / "index.html").exists():
         pages.append((f"{d}/", WEB / d / "index.html"))
-# one folder per story; the flat stories/<slug>.html files are redirect stubs
+# one folder per story; the flat stories/<slug>.html files are redirect stubs,
+# and renamed stories leave a redirecting folder behind — skip both
 for d in sorted((WEB / "stories").iterdir()):
     if d.is_dir() and (d / "index.html").exists():
+        if 'http-equiv="refresh"' in (d / "index.html").read_text():
+            continue
         pages.append((f"stories/{d.name}/", d / "index.html"))
 
 lines = [

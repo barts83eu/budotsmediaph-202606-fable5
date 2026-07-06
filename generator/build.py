@@ -182,7 +182,7 @@ PAGES["brand-protection"] = dict(
 <p><em>We have chosen not to name individuals on this page.</em></p>
 """)
 
-# ---- batch 2: olango practice, games dev, cinduy wedding, lapu-lapu projects ----
+# ---- batch 2: olango practice, games dev, cindy wedding, lapu-lapu projects ----
 
 
 OLANGO = "https://lh3.googleusercontent.com/pw/AP1GczOsP2lrRkOnDYRo7jbJtRSI8YmwZ-PiLZG6eeaNeEGUNmgBtiFHYSIzj4TemzZ9a8D93DdaWel_aDh3m0UHZyCQD3UMqb90a8BurcwzIWd9ymjyadMc=w1600"
@@ -224,17 +224,19 @@ PAGES["games-dev"] = dict(
 <p>What we brought home from Boracay: gaussian splats and photogrammetry from our aerial survey work become game-ready environments — real Philippine islands, streets and reefs as playable worlds. Combined with a sovereign Filipino language model for dialogue, the pipeline from drone to game to AI is one company's roadmap in miniature.</p>
 """)
 
-PAGES["cinduy-wedding"] = dict(
-    TITLE="The Cinduy Cinco Wedding", H1="Cinduy<br>Cinco",
-    KICKER="Weddings · 2026", HERO=BEACH,
-    DESC="The 2026 Cinduy Cinco wedding and the films Budots Media created for it.",
+PAGES["cindy-wedding"] = dict(
+    TITLE="The Cindy Cinco Wedding", H1="Cindy<br>Cinco",
+    KICKER="Weddings · 2026 · NUSTAR Cebu", HERO=BEACH,
+    DESC="Budots Media filmed the 2026 wedding of Cebuana vlogger Cindy Cinco and David Peyer at NUSTAR Resort & Casino Cebu. Watch the film.",
     BODY=f"""
 <p class="kicker">Weddings — 2026</p>
-<p class="lead">In 2026 Budots Media filmed the wedding of Cinduy Cinco — a production that carried everything the studio does into a single day: cinema cameras on the ground, drones in the air, and an edit that treats a wedding like an expedition film.</p>
-<p>Wedding work is where the production house's disciplines converge. The same drone pilots who tracked outrigger canoes around Cebu fly the processional; the same editors who cut DOT campaigns grade the golden hour; same-day edits are assembled on site so the film premieres at the reception.</p>
+<p class="lead">In 2026 Budots Media filmed the wedding of Cindy Cinco — the Cebuana vlogger whose videos won her a devoted following at home and abroad — and David Peyer, the American engineer she married in an intimate ceremony at NUSTAR Resort &amp; Casino Cebu. The homecoming was an event in itself: when the US-based couple appeared at the Sinulog 2026 parade, Cebu turned out for her.</p>
+<p>NUSTAR made it home turf twice over — the integrated resort on Cebu's South Road Properties is a Budots Media client, so we had filmed the venue long before we filmed the vows. Wedding work is where the production house's disciplines converge: the same drone pilots who tracked outrigger canoes around Cebu fly the processional, and the same editors who cut DOT campaigns grade the golden hour.</p>
+<div style="display:flex;justify-content:center;margin:2rem 0"><iframe src="https://www.youtube.com/embed/o1zNuhSj92A" title="Budots Media Ph presents: Cindy Cinco Wedding 2026" style="width:min(360px,100%);aspect-ratio:9/16;border:0;border-radius:10px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
 <blockquote>A wedding is a one-take documentary. There is no second sunrise, no reshoot, no B-roll day. It is the most honest test of a film crew that exists.</blockquote>
-<p>For Cinduy's films, the brief was Cebuano at heart and cinematic in scale — story first, family everywhere in the frame, the island as the third character.</p>
-<p><em>[Draft — add Cinduy's photos, video links and details via an .md file in the instructions folder and this page will be extended.]</em></p>
+<p>For Cindy's film, the brief was Cebuano at heart and cinematic in scale — story first, family everywhere in the frame, the island as the third character.</p>
+<p><em>Watch &amp; read: <a href="https://www.youtube.com/shorts/o1zNuhSj92A" style="color:var(--accent)">"Budots Media Ph presents: Cindy Cinco Wedding 2026"</a> · <a href="https://www.facebook.com/nomseprods/photos/cebu-city-social-media-personality-cindy-cinco-and-her-husband-david-peyer-were-/26090624890562466/" style="color:var(--accent)">Nomse Prods</a> · <a href="https://www.facebook.com/cebuknows/posts/the-wedding-of-cindy-cinco-and-david-peyer-at-nustar-cebu-has-captured-widesprea/1496737335408045/" style="color:var(--accent)">Cebu Knows</a> · <a href="https://www.facebook.com/CebuanoNews1/posts/cindy-cinco-and-her-husband-david-arrived-in-cebu-yesterday-from-the-united-stat/1167750008551395/" style="color:var(--accent)">Cebuano News</a> · <a href="https://www.instagram.com/p/DWbXrA9kQlK/" style="color:var(--accent)">Instagram — the intimate wedding at NUSTAR</a></em></p>
+<p><em>[Add stills from the film via an .md file in the instructions folder and this page will be extended.]</em></p>
 """)
 
 PAGES["lapulapu-projects"] = dict(
@@ -274,7 +276,7 @@ PAGES["brides-of-triton"] = dict(
 <img src="{JPARK}" alt="JPARK Island Resort, Lapu-Lapu City, host of Brides at Triton" loading="lazy">
 <p>Under the Budots Media banner the expo brings gowns, jewelry, catering, styling, photography, home interiors and livestreaming vendors together under one roof for couples planning a Cebu wedding — the same JPARK relationship that runs through our resort and events client work across Lapu-Lapu City.</p>
 <blockquote>A wedding expo is a portfolio show for an entire industry — every vendor's best day, staged on one weekend.</blockquote>
-<p>It sits alongside our single-couple wedding films — like <a href="../cinduy-wedding/" style="color:var(--accent)">Cinduy Cinco's</a> — as the other half of how Budots Media covers Cebu weddings: one production the industry gathers around, one the story of a single family.</p>
+<p>It sits alongside our single-couple wedding films — like <a href="../cindy-wedding/" style="color:var(--accent)">Cindy Cinco's</a> — as the other half of how Budots Media covers Cebu weddings: one production the industry gathers around, one the story of a single family.</p>
 """,
 )
 

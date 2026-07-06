@@ -11,7 +11,7 @@ Format: `YEAR-MONTH · CLIENT — description — link`. Month omitted where unk
 - **2026-07 · Asurion Cebu** — Grand-opening 2026 event coverage — [Video](https://www.youtube.com/watch?v=mBHzsuLGNo4)
 - **2026-07 · ASEAN Tourism Showcase 2026** — Event coverage — [Video](https://www.youtube.com/watch?v=CdgKLH92OoA)
 - **2026-07 · Department of Tourism** — "Love Philippines" logo generator (gen-AI demo short) — [Video](https://www.youtube.com/shorts/atCi9_hHIws)
-- **2026-04 · Cindy Cinco x David wedding** — Wedding film, Cebu — [Video](https://www.youtube.com/shorts/o1zNuhSj92A) · [Story page](https://barts83eu.github.io/budotsmediaph-202606-fable5/stories/cinduy-wedding/)
+- **2026-04 · Cindy Cinco x David wedding** — Wedding film, Cebu — [Video](https://www.youtube.com/shorts/o1zNuhSj92A) · [Story page](https://barts83eu.github.io/budotsmediaph-202606-fable5/stories/cindy-wedding/)
 - **2026-03 · Outdoors 7 at Ayala** — Outdoor-sports festival coverage — [Video](https://www.youtube.com/watch?v=u7FoCVjkZhA)
 - **2026-02 · Cebu City** — 89th Cebu City Charter Day at Waterfront Cebu; coverage published 2026-07 — [Video](https://www.youtube.com/watch?v=ZwjXtgwZF5Q)
 - **2026-01 · Andrales Print, Cebu** — Social-media reel edit — [Video](https://www.youtube.com/shorts/HtGx84xFocI)

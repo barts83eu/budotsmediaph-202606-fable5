@@ -60,7 +60,7 @@ generator/template.html   shared page shell (nav, hero, footer, GA tag)
 - CSS classes from `website/css/main.css`: `kicker` (small label), `lead` (large opening paragraph), plain `<p>`, `<blockquote>` for pull quotes.
 - Images: add the URL to the `IMG` dict and use the `img('key', 'alt')` helper — it adds `loading="lazy"`. Hero photos are currently hotlinked from external CDNs (see `instructions/build-notes-reference.md`); logos are local under `assets/img/logos/`.
 - Wix-reel videos (budotsmediaph.co): embed with the `wixvid('key', 'caption')` helper — files stay hosted on `video.wixstatic.com` (720p), posters on `static.wixstatic.com`. IDs live in the `WIX` dict.
-- Unverified facts: write the page as a styled draft and mark the spot with `<p><em>[Draft — add facts via .md file in instructions/]</em></p>` — same policy as `plank-g.html` and `cinduy-wedding.html`.
+- Unverified facts: write the page as a styled draft and mark the spot with `<p><em>[Draft — add facts via .md file in instructions/]</em></p>` — same policy as `plank-g.html` and `cindy-wedding`.
 
 ## History
 
