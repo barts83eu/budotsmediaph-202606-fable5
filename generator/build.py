@@ -339,6 +339,143 @@ PAGES["cleevan-alegres"] = dict(
 <p><em>Press coverage: <a href="https://cebudailynews.inquirer.net/374799/cebus-merman-makes-history-completes-swim-around-mactan-island" style="color:var(--accent)">Cebu Daily News — "Cebu's 'Little Merman' makes history"</a> · <a href="https://cebudailynews.inquirer.net/369848/oponganon-to-make-historic-swim-around-mactan-island-on-april-24" style="color:var(--accent)">CDN preview</a> · <a href="https://www.manilatimes.net/2021/04/25/sports/alegres-attempts-to-become-1st-man-to-swim-around-mactan-island/867203/" style="color:var(--accent)">The Manila Times</a></em></p>
 """)
 
+# ---- batch 4: films from the Wix portfolio reel (budotsmediaph.co) ----
+# The videos stay hosted on Wix (video.wixstatic.com) — we only embed them.
+# Client attribution is implied from the reel's file names; where a client
+# could not be verified, the page carries the standard draft marker.
+
+WIX_VIDEO = "https://video.wixstatic.com/video/%s/720p/mp4/file.mp4"
+WIX_POSTER = "https://static.wixstatic.com/media/%sf000.jpg"
+
+WIX = {
+    "bbmg_mtv": "acad74_a531a0e236fc4258a56736fa81deac88",
+    "jpark_avp": "acad74_daa19b89468b4da9bfbc26f6b4cf7e04",
+    "jpark_chef": "acad74_ae255f37fa9a41ccb0fc18de76136801",
+    "ascendion_philtech": "acad74_ec7243a961a44609b74b1b4860b9424a",
+    "ascendion_gcash": "acad74_33bd6a35a572469b8dd12b681efc913d",
+    "ascendion_th": "acad74_91e6af7fb1bb4b2aace8f1698eb1ea8e",
+    "mcia": "acad74_6229332b25484b92897aca4316014c5e",
+    "dvshop": "acad74_03aa302be17e4ec3af6baefdf2355009",
+    "nouveau": "acad74_cace93b5bf1540db82c4f54720a0ce3f",
+    "secret_menu": "acad74_177649dcb107491ba0b4789601d29af8",
+    "salud_bts": "acad74_2f0de8e6b5e94e0aa485aa372d25b744",
+    "with_cta": "acad74_3398c0a8be9c42ec834fde48ec24381e",
+}
+
+def wixvid(key, label=""):
+    vid = WIX[key]
+    cap = (f'<p style="margin:-1.2rem 0 2rem;font-size:.72rem;letter-spacing:.18em;'
+           f'text-transform:uppercase;opacity:.65">{label}</p>') if label else ""
+    return (f'<video controls preload="none" poster="{WIX_POSTER % vid}" '
+            f'src="{WIX_VIDEO % vid}" '
+            'style="width:100%;border-radius:10px;margin:2rem 0;display:block;background:#000"></video>'
+            + cap)
+
+PAGES["be-my-guest"] = dict(
+    TITLE="Be My Guest — A Music Video for Philippine Tourism", H1="Be My<br>Guest",
+    KICKER="Department of Tourism · Music Video", HERO=WIX_POSTER % WIX["bbmg_mtv"],
+    DESC="A full music video carrying the Department of Tourism and Be My Guest Philippines marks, from the Budots Media portfolio reel.",
+    BODY=f"""
+<p class="kicker">Tourism · Music Video</p>
+<p class="lead">On our portfolio reel sits a full music video that closes on two marks: the seal of the Philippine Department of Tourism and the logo of <strong>Be My Guest Philippines</strong>. Palm-fringed sand, turquoise channels, and a song that does what every tourism campaign tries to do — invite.</p>
+<p>The campaign name says it plainly: treat the visitor not as a tourist but as a guest — of the Filipino table, the Filipino beach, the Filipino family. A music video ("MTV" in the cut's title, the way Filipino production houses have always labeled them) is the natural format for that promise: hospitality you can hum.</p>
+{wixvid('bbmg_mtv', 'BBMG MTV — final cut · video hosted on budotsmediaph.co')}
+<p>It joins a long line of tourism work in this house — from <a href="../dot-love-philippines/" style="color:var(--accent)">Love the Philippines</a> to DOT7's regional programs.</p>
+<p><em>[Draft — campaign year, artist and full credits to be added via an .md file in the instructions folder.]</em></p>
+""")
+
+PAGES["jpark-corporate-avp"] = dict(
+    TITLE="JPARK Island Resort — Corporate AVP 2024", H1="The Resort,<br>In Two Films",
+    KICKER="JPARK Island Resort &amp; Waterpark · 2024", HERO=JPARK,
+    DESC="The 2024 corporate AVP for JPARK Island Resort & Waterpark Mactan and a portrait of Chef Yi-Fan, embedded from the Budots Media reel.",
+    BODY=f"""
+<p class="kicker">Client — JPARK Island Resort &amp; Waterpark</p>
+<p class="lead">JPARK Island Resort &amp; Waterpark in Maribago is Cebu's biggest waterpark resort — and one of Budots Media's longest-running relationships: <a href="../brides-of-triton/" style="color:var(--accent)">Brides at Triton</a>, aerial photography, condo marketing, behind-the-scenes reels. In 2024 that relationship produced the resort's corporate AVP.</p>
+{wixvid('jpark_avp', 'Corporate AVP 2024 — JPARK Island Resort & Waterpark Mactan · hosted on budotsmediaph.co')}
+<p>A corporate AVP is a resort compressed to minutes: rooms, waterpark, ballrooms, buffet lines and beach, cut to sell the whole property at once. Alongside it sits the opposite kind of film — one person, one craft: a portrait of the resort's Chef Yi-Fan.</p>
+{wixvid('jpark_chef', 'Chef Yi-Fan — portrait film · hosted on budotsmediaph.co')}
+<p>Same client, two altitudes: the establishing wide and the close-up. Most of what we know about filming resorts lives between those two.</p>
+""")
+
+PAGES["ascendion-films"] = dict(
+    TITLE="Three Films for Ascendion", H1="Engineering,<br>Three Cuts",
+    KICKER="Ascendion · AI-Led GCC, Cebu", HERO=WIX_POSTER % WIX["ascendion_philtech"],
+    DESC="Three films for Ascendion, the AI-first software engineering company that launched the Philippines' first AI-led Global Capability Center in Cebu with PhilTech.",
+    BODY=f"""
+<p class="kicker">Client — Ascendion</p>
+<p class="lead">Ascendion is an AI-first software engineering company — and since June 2025, a Cebu story: together with PhilTech it launched the Philippines' first AI-led Global Capability Center here. Budots Media covered the launch, and the reel holds three Ascendion cuts.</p>
+{wixvid('ascendion_philtech', 'Ascendion × PhilTech partnership film · hosted on budotsmediaph.co')}
+<p>The partnership film opens mid-air — skydivers in an open door, the Ascendion mark in the corner — which tells you what kind of engineering brand this is trying to be. The other two cuts, labeled for GCash and "TH" on the reel, point at the engagements the GCC serves: fintech-scale platforms and talent.</p>
+{wixvid('ascendion_gcash', 'Ascendion — GCash cut (V6) · hosted on budotsmediaph.co')}
+{wixvid('ascendion_th', 'Ascendion — "TH" cut (V4) · hosted on budotsmediaph.co')}
+<p><em>Launch coverage: <a href="https://www.youtube.com/shorts/3jVCLaaKJXo" style="color:var(--accent)">Ascendion × PhilTech GCC launch short</a>. [Draft — engagement details behind the GCash and TH cuts are implied from the reel's file names.]</em></p>
+""")
+
+PAGES["mcia-two-minutes"] = dict(
+    TITLE="Two Minutes for MCIA", H1="The Gateway,<br>In Two Minutes",
+    KICKER="Mactan–Cebu International Airport", HERO=WIX_POSTER % WIX["mcia"],
+    DESC="A two-minute film for Mactan–Cebu International Airport, the Philippines' second-busiest gateway — from the Budots Media reel.",
+    BODY=f"""
+<p class="kicker">Client — MCIA</p>
+<p class="lead">Every production this house has ever made arrived through the same doors: Mactan–Cebu International Airport, the Philippines' second-busiest international gateway — and, since its resort-airport Terminal 2 opened, one of the country's best arguments that infrastructure can be beautiful.</p>
+<p>MCIA sits fifteen minutes from our production house. When the airport needed itself explained in two minutes — boarding passes, runways, the island beyond — the brief landed close to home. The reel's cut is labeled V4: the fourth version, the one that survived.</p>
+{wixvid('mcia', 'MCIA — two-minute film (V4) · hosted on budotsmediaph.co')}
+<p>It belongs to the same home-turf portfolio as our <a href="../lapulapu-projects/" style="color:var(--accent)">Lapu-Lapu City work</a>: the airport, the resorts and the bridge are the three doors Cebu opens to the world.</p>
+""")
+
+PAGES["dvshop-film"] = dict(
+    TITLE="DVSHOP Sneakers Cebu — Brand Film", H1="Sneakers,<br>On Camera",
+    KICKER="Retail · DVSHOP Sneakers Cebu", HERO=WIX_POSTER % WIX["dvshop"],
+    DESC="A brand film for DVSHOP Sneakers Cebu, the sneaker retailer Budots Media shoots retail promos for.",
+    BODY=f"""
+<p class="kicker">Client — DVSHOP Sneakers Cebu</p>
+<p class="lead">DVSHOP Sneakers Cebu sells sneaker culture to a city that runs, rides and hoops in the heat — and it markets the way sneaker brands should: fast cuts, product close-ups, streets. Budots Media shoots its promos, from social reels to the brand film on our portfolio.</p>
+{wixvid('dvshop', 'DVSHOP — brand film (V2) · hosted on budotsmediaph.co')}
+<p>Retail video is honest work: the product either looks worth queueing for or it doesn't. Our January 2026 <a href="https://www.youtube.com/shorts/3F5xyTlEdIE" style="color:var(--accent)">retail promo short</a> for the same shop shows the format at social length.</p>
+""")
+
+PAGES["nouveau-resort-film"] = dict(
+    TITLE="Nouveau Resort, From Above", H1="Camiguin,<br>Straight Down",
+    KICKER="Nouveau Resort · Camiguin", HERO=WIX_POSTER % WIX["nouveau"],
+    DESC="A resort film for Nouveau Resort Camiguin — white islets, reef flats and outriggers from directly overhead. Part of Budots Media's multi-year Camiguin engagement.",
+    BODY=f"""
+<p class="kicker">Client — Nouveau Resort, Camiguin</p>
+<p class="lead">Nouveau Resort is a luxury property on Camiguin — the volcano island off northern Mindanao — and part of one of Budots Media's longest engagements: multi-year media coverage for Camiguin Resorts. The film on our reel opens the way Camiguin deserves: straight down onto a white islet ringed by reef, outriggers moored in a line.</p>
+{wixvid('nouveau', 'Nouveau Resort — draft cut · hosted on budotsmediaph.co')}
+<p>The cut on the reel is literally labeled "Draft 1" — which is what a long-term client relationship looks like from the inside: versions, not verdicts. The finished films live on the client's channels; the drafts live on ours.</p>
+<p>More of the long-haul story in <a href="../lapulapu-projects/" style="color:var(--accent)">Projects in Lapu-Lapu City</a>.</p>
+""")
+
+PAGES["secret-menu"] = dict(
+    TITLE="Secret Menu — Teaser", H1="Don't Tell<br>Anyone",
+    KICKER="F&amp;B Teaser · Draft", HERO=WIX_POSTER % WIX["secret_menu"],
+    DESC="A teaser for a 'Secret Menu' launch — food-and-beverage marketing built on off-menu culture. From the Budots Media reel.",
+    BODY=f"""
+<p class="kicker">Teaser</p>
+<p class="lead">Every good restaurant city has an off-menu economy — the orders you only know if somebody tells you. "Secret Menu" is a launch built on exactly that instinct, and the teaser on our reel plays it the way teasers should: show almost nothing, promise everything.</p>
+{wixvid('secret_menu', 'Secret Menu — teaser (final version) · hosted on budotsmediaph.co')}
+<p>The cut is labeled VF — version finale — the last pass before a campaign goes public.</p>
+<p><em>[Draft — the client behind Secret Menu is implied from the reel's file name only; brand, venue and launch date to be added via an .md file in the instructions folder.]</em></p>
+""")
+
+PAGES["salud-bts"] = dict(
+    TITLE="Salud — Behind the Scenes", H1="Salud!",
+    KICKER="Behind the Scenes · Draft", HERO=WIX_POSTER % WIX["salud_bts"],
+    DESC="A behind-the-scenes film from the Salud brand shoot, on the Budots Media reel.",
+    BODY=f"""
+<p class="kicker">Behind the Scenes</p>
+<p class="lead">"Salud" is what you say when the glasses are already raised — to your health. The BTS film on our reel comes from the Salud brand shoot: the lights, the resets, the twenty takes behind the three seconds that make the final ad.</p>
+{wixvid('salud_bts', 'Salud — behind the scenes · hosted on budotsmediaph.co')}
+<p>We publish behind-the-scenes cuts because they are the most truthful advertising a production house has: the finished film sells the client; the BTS sells the crew.</p>
+<p><em>[Draft — the Salud brand and campaign are implied from the reel's file name only; details to be added via an .md file in the instructions folder.]</em></p>
+""")
+
+# one unattributed aerial cut from the reel belongs on the existing drone story
+PAGES["drone-aerial"]["BODY"] += f"""
+<p>One recent cut from our portfolio reel shows the format at work — Cebu's highland spine from above, ending on a campaign call to action.</p>
+{wixvid('with_cta', 'Aerial destination cut with CTA · hosted on budotsmediaph.co')}
+"""
+
 REDIRECT = """<!DOCTYPE html>
 <html lang="en">
 <head>

@@ -11,7 +11,7 @@ Format: `YEAR-MONTH · CLIENT — description — link`. Month omitted where unk
 - **2026-07 · Asurion Cebu** — Grand-opening 2026 event coverage — [Video](https://www.youtube.com/watch?v=mBHzsuLGNo4)
 - **2026-07 · ASEAN Tourism Showcase 2026** — Event coverage — [Video](https://www.youtube.com/watch?v=CdgKLH92OoA)
 - **2026-07 · Department of Tourism** — "Love Philippines" logo generator (gen-AI demo short) — [Video](https://www.youtube.com/shorts/atCi9_hHIws)
-- **2026-04 · Cindy Cinco x David wedding** — Wedding film, Cebu — [Video](https://www.youtube.com/shorts/o1zNuhSj92A) · [Story page](https://barts83eu.github.io/budotsmediaph-202606-fable5/stories/cinduy-wedding.html)
+- **2026-04 · Cindy Cinco x David wedding** — Wedding film, Cebu — [Video](https://www.youtube.com/shorts/o1zNuhSj92A) · [Story page](https://barts83eu.github.io/budotsmediaph-202606-fable5/stories/cinduy-wedding/)
 - **2026-03 · Outdoors 7 at Ayala** — Outdoor-sports festival coverage — [Video](https://www.youtube.com/watch?v=u7FoCVjkZhA)
 - **2026-02 · Cebu City** — 89th Cebu City Charter Day at Waterfront Cebu; coverage published 2026-07 — [Video](https://www.youtube.com/watch?v=ZwjXtgwZF5Q)
 - **2026-01 · Andrales Print, Cebu** — Social-media reel edit — [Video](https://www.youtube.com/shorts/HtGx84xFocI)
@@ -24,7 +24,7 @@ Format: `YEAR-MONTH · CLIENT — description — link`. Month omitted where unk
 - **2025-12 · JPARK Island Resort** — Resort shoot (behind the scenes) — [Video](https://www.youtube.com/shorts/0cctTER1j7Y)
 - **2025-01 · JPARK Island Resort** — Aerial photography, Maribago — [Article](https://bartsakwerda.com/2025/01/09/aerial-photography-in-philippines/)
 - **2024 · Green Concepts and Events** — Full-year event coverage for the Cebu events company ("2024 Events … Captured by Budots Media PH") — [Video](https://www.youtube.com/watch?v=Yj8ox76LaJE)
-- **2024-04 · Ironman 70.3 Lapu-Lapu** — Race coverage (Mactan Newtown / CCLEX, 2024-04-21) — [Story page](https://barts83eu.github.io/budotsmediaph-202606-fable5/stories/ironman.html)
+- **2024-04 · Ironman 70.3 Lapu-Lapu** — Race coverage (Mactan Newtown / CCLEX, 2024-04-21) — [Story page](https://barts83eu.github.io/budotsmediaph-202606-fable5/stories/ironman/)
 - **2024 · Department of Tourism Region 7 (DOT7)** — FMA7, RIDE7 and DIVE7 tourism campaigns — [Overview](https://bartsakwerda.com/budots-media/)
 - **2024 · Cebu News** — Launch of short-form video news brand (Facebook-first) — [Overview](https://bartsakwerda.com/budots-media/)
 - **2024 · JPARK Island Resort** — Event promotion and condominium sales marketing — [Portfolio](https://budotsmedia.webflow.io)
@@ -33,7 +33,7 @@ Format: `YEAR-MONTH · CLIENT — description — link`. Month omitted where unk
 - **2023 · Mandani Bay** — Aerial construction photography, Mandaue, Metro Cebu — [Wikipedia](https://ceb.wikipedia.org/wiki/Budots_Media)
 - **2023-06 · Department of Tourism** — Work under the "Love the Philippines" campaign (launched 2023-06-27) — [Story page](https://barts83eu.github.io/budotsmediaph-202606-fable5/stories/dot-love-philippines.html)
 - **2022 · DOT7 — Eskrima Tour of Cebu** ⚠ — Filipino Martial Arts tour, client TudTud — [Story page](https://barts83eu.github.io/budotsmediaph-202606-fable5/stories/dot7-eskrima-tour.html)
-- **2022 · Savoy Hotel Mactan — Ironman** ⚠ — Client project with Neviann Sanchez and Robert Tatii — [Story page](https://barts83eu.github.io/budotsmediaph-202606-fable5/stories/ironman.html)
+- **2022 · Savoy Hotel Mactan — Ironman** ⚠ — Client project with Neviann Sanchez and Robert Tatii — [Story page](https://barts83eu.github.io/budotsmediaph-202606-fable5/stories/ironman/)
 - **2021-12 · Typhoon Odette response** — Mapping and damage assessment, Cebu — [Wikipedia](https://ceb.wikipedia.org/wiki/Budots_Media)
 - **2021-04 · Cleevan Alegres** — Documentation of the first-ever Mactan Island circumnavigation swim (40+ km, 17:37:35, 2021-04-25/26) — [Story page](https://barts83eu.github.io/budotsmediaph-202606-fable5/stories/cleevan-alegres.html) · [Cebu Daily News](https://cebudailynews.inquirer.net/374799/cebus-merman-makes-history-completes-swim-around-mactan-island) · [Wikipedia](https://ceb.wikipedia.org/wiki/Budots_Media)
 - **2021-06 · Philippine Outrigger Canoe Club — OC6 expedition** — 227 km zero-fuel paddle, Cebu SRP → Moalboal, launched on the 123rd Independence Day (2021-06-12); photos credited Budots Media — [Article](https://atlascommune.com/blogs/community/big-canoe-bigger-dream) · [Story page](https://barts83eu.github.io/budotsmediaph-202606-fable5/stories/big-canoe.html)
@@ -85,6 +85,20 @@ From Facebook (pages: [budots.media](https://www.facebook.com/budots.media/) Wes
 - **Brides of Triton** — JPark Wedding Expo film — [Video](https://www.facebook.com/cebu.lapu2/videos/1015805990550210/)
 
 From the archived budotsmediaph.com (June 2025 snapshot, now mirrored at [/showcase/](https://barts83eu.github.io/budotsmediaph-202606-fable5/showcase/)): production for foreign video crews (Japan, Korea) · teams in Cebu, Palawan and Mindanao (from 2025) · LGU projects in 5+ provinces via PhilGEPS · product launches with Green Concepts Cebu · brands: Cebu News, Aerial Data Ops, Philippines Travel Company.
+
+## From the Wix portfolio reel (budotsmediaph.co, fetched 2026-07-06)
+
+Client films hosted on Wix (video.wixstatic.com) and embedded on this site's story pages. Clients implied from the reel's file names; ⚠ = client not yet verified.
+
+- **Department of Tourism · Be My Guest Philippines** — full music video ("BBMG MTV FINAL") — [Story](https://barts83eu.github.io/budotsmediaph-202606-fable5/stories/be-my-guest/)
+- **JPARK Island Resort & Waterpark** — Corporate AVP 2024 + Chef Yi-Fan portrait — [Story](https://barts83eu.github.io/budotsmediaph-202606-fable5/stories/jpark-corporate-avp/)
+- **Ascendion** — Philtech partnership film, GCash cut (V6), "TH" cut (V4) — [Story](https://barts83eu.github.io/budotsmediaph-202606-fable5/stories/ascendion-films/)
+- **Mactan–Cebu International Airport** — 2-minute film (V4) — [Story](https://barts83eu.github.io/budotsmediaph-202606-fable5/stories/mcia-two-minutes/)
+- **DVSHOP Sneakers Cebu** — brand film (V2) — [Story](https://barts83eu.github.io/budotsmediaph-202606-fable5/stories/dvshop-film/)
+- **Nouveau Resort, Camiguin** — resort film ("DRAFT 1") — [Story](https://barts83eu.github.io/budotsmediaph-202606-fable5/stories/nouveau-resort-film/)
+- **Secret Menu** ⚠ — F&B launch teaser (VF) — [Story](https://barts83eu.github.io/budotsmediaph-202606-fable5/stories/secret-menu/)
+- **Salud** ⚠ — behind-the-scenes film — [Story](https://barts83eu.github.io/budotsmediaph-202606-fable5/stories/salud-bts/)
+- **Aerial destination cut with CTA** — embedded on the [drone & aerial story](https://barts83eu.github.io/budotsmediaph-202606-fable5/stories/drone-aerial/)
 
 ## Founder initiatives (Bart Sakwerda)
 
