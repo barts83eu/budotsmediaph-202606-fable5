@@ -5,6 +5,8 @@
 import pathlib
 import subprocess
 
+# When the custom domain is linked to GitHub Pages, change BASE to the bare
+# domain (e.g. "https://budotsmedia.ph/") and rerun — page paths stay the same.
 BASE = "https://barts83eu.github.io/budotsmediaph-202606-fable5/"
 ROOT = pathlib.Path(__file__).parent.parent
 WEB = ROOT / "website"
@@ -24,9 +26,10 @@ pages = [("", WEB / "index.html")]
 for d in ("stories", "projects", "ai", "showcase", "partners"):
     if (WEB / d / "index.html").exists():
         pages.append((f"{d}/", WEB / d / "index.html"))
-for f in sorted((WEB / "stories").glob("*.html")):
-    if f.name != "index.html":
-        pages.append((f"stories/{f.name}", f))
+# one folder per story; the flat stories/<slug>.html files are redirect stubs
+for d in sorted((WEB / "stories").iterdir()):
+    if d.is_dir() and (d / "index.html").exists():
+        pages.append((f"stories/{d.name}/", d / "index.html"))
 
 lines = [
     '<?xml version="1.0" encoding="UTF-8"?>',

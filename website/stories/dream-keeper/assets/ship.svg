@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" role="img" aria-label="Silhouette of the liveaboard dive yacht M/V Dream Keeper">
+  <g fill="#04101c">
+    <!-- hull, bow to the right -->
+    <path d="M28 148 L588 148 L626 118 L610 166 Q602 196 554 198 L86 198 Q44 194 28 148 Z"/>
+    <!-- main-deck cabin -->
+    <path d="M96 148 L96 112 Q96 106 104 106 L436 106 Q466 108 488 122 L512 148 Z"/>
+    <!-- upper deck / wheelhouse -->
+    <path d="M140 106 L140 82 Q140 76 148 76 L328 76 Q352 78 368 90 L384 106 Z"/>
+    <!-- radar arch and mast -->
+    <path d="M296 76 L312 44 L318 44 L308 76 Z"/>
+    <rect x="311" y="30" width="3" height="16"/>
+    <rect x="303" y="36" width="19" height="3"/>
+    <!-- bow rail -->
+    <path d="M384 106 L588 148 L588 143 L390 102 Z"/>
+  </g>
+  <g fill="#10344f">
+    <!-- main-deck windows -->
+    <rect x="114" y="120" width="20" height="10" rx="3"/>
+    <rect x="148" y="120" width="20" height="10" rx="3"/>
+    <rect x="182" y="120" width="20" height="10" rx="3"/>
+    <rect x="216" y="120" width="20" height="10" rx="3"/>
+    <rect x="250" y="120" width="20" height="10" rx="3"/>
+    <rect x="284" y="120" width="20" height="10" rx="3"/>
+    <rect x="318" y="120" width="20" height="10" rx="3"/>
+    <rect x="352" y="120" width="20" height="10" rx="3"/>
+    <rect x="386" y="120" width="20" height="10" rx="3"/>
+    <rect x="420" y="120" width="20" height="10" rx="3"/>
+    <!-- wheelhouse windows -->
+    <rect x="156" y="86" width="24" height="9" rx="3"/>
+    <rect x="192" y="86" width="24" height="9" rx="3"/>
+    <rect x="228" y="86" width="24" height="9" rx="3"/>
+    <rect x="264" y="86" width="24" height="9" rx="3"/>
+    <rect x="300" y="86" width="24" height="9" rx="3"/>
+  </g>
+</svg>

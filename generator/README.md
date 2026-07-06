@@ -1,6 +1,8 @@
 # Story-page generator — notes
 
-Generates every page in `website/stories/` (18 pages currently) from one template. Plain Python 3, standard library only — no dependencies to install.
+Generates every story page under `website/stories/<slug>/index.html` (19 pages currently) from one template, plus a redirect stub at the old flat URL `website/stories/<slug>.html`. Plain Python 3, standard library only — no dependencies to install.
+
+One page is **not** generated: `website/stories/dream-keeper/` is a hand-authored custom parallax page with its own `assets/` (CSS/JS/SVG). `build.py` never touches it.
 
 ## How it works
 
@@ -8,10 +10,11 @@ Generates every page in `website/stories/` (18 pages currently) from one templat
 generator/build.py        page content (PAGES dict) + image URLs (IMG dict)
 generator/template.html   shared page shell (nav, hero, footer, GA tag)
         │
-        └── python3 generator/build.py  →  website/stories/*.html
+        └── python3 generator/build.py  →  website/stories/<slug>/index.html
+                                           + website/stories/<slug>.html (redirect stub)
 ```
 
-`build.py` takes `template.html` and, for each entry in `PAGES`, substitutes six placeholders, then writes the file into `website/stories/`:
+`build.py` takes `template.html` and, for each entry in `PAGES` (keyed by slug), substitutes six placeholders, then writes `website/stories/<slug>/index.html`. Story pages live two levels below the site root, so template paths use `../../`; links between stories are `../<other-slug>/`:
 
 | Placeholder | Meaning |
 |---|---|
@@ -24,7 +27,7 @@ generator/template.html   shared page shell (nav, hero, footer, GA tag)
 
 ## Rules
 
-- **Never edit `website/stories/*.html` directly.** Every run of `build.py` rewrites all of them — direct edits are silently overwritten. Content changes go in `PAGES` in `build.py`; layout/head changes (analytics, fonts, nav) go in `template.html`.
+- **Never edit generated story pages directly.** Every run of `build.py` rewrites all of them — direct edits are silently overwritten. Content changes go in `PAGES` in `build.py`; layout/head changes (analytics, fonts, nav) go in `template.html`.
 - `website/index.html` is **not** generated — it is maintained by hand. Anything added to the template head (like the Google Analytics tag, `G-0QY44NZW9Y`, added 2026-07-05) must be mirrored in `index.html` manually, and vice versa.
 - After editing, run from the repo root: `python3 generator/build.py` — then commit the regenerated pages together with the generator change. Pushing to `main` auto-deploys via GitHub Pages.
 
@@ -36,7 +39,7 @@ generator/template.html   shared page shell (nav, hero, footer, GA tag)
 
 1. Add an entry to `PAGES` in `build.py`:
    ```python
-   PAGES["my-story.html"] = dict(
+   PAGES["my-story"] = dict(
        TITLE="My Story", H1="My<br>Story",
        KICKER="Client — Year", HERO=IMG["beach"],
        DESC="One-sentence meta description.",
@@ -49,7 +52,8 @@ generator/template.html   shared page shell (nav, hero, footer, GA tag)
    """)
    ```
 2. Run `python3 generator/build.py`.
-3. Add a story card linking to it in `website/index.html` (`#stories` section), and an entry in `website/sitemap.xml`.
+3. Add a story card linking to it (`href="stories/my-story/"`) in `website/index.html` (`#stories` section) and in `website/stories/index.html`, then run `python3 generator/sitemap.py`.
+4. Story-specific assets (images, extra CSS/JS) go in `website/stories/<slug>/assets/` and are referenced relatively (`assets/...`) from the page.
 
 ## Body conventions
 

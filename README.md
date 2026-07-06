@@ -20,7 +20,7 @@ A fully static site — no framework, no build dependencies for the pages themse
 
 ```
 website/       The publishable site (this folder is what gets deployed)
-generator/     Story-page generator: build.py + template.html → website/stories/*.html
+generator/     Story-page generator: build.py + template.html → website/stories/<slug>/index.html
 instructions/  Content sources, build notes, and asset references (not deployed)
 ```
 
@@ -28,7 +28,7 @@ To add or edit a story page: add/modify a `PAGES` entry in [generator/build.py](
 
 ## Site map
 
-Machine-readable: [website/sitemap.xml](website/sitemap.xml) (19 URLs, referenced from [website/robots.txt](website/robots.txt)).
+Machine-readable: [website/sitemap.xml](website/sitemap.xml) (26 URLs, referenced from [website/robots.txt](website/robots.txt)).
 
 ```
 /  Homepage — parallax one-pager
@@ -41,25 +41,27 @@ Machine-readable: [website/sitemap.xml](website/sitemap.xml) (19 URLs, reference
 ├── #three-d      3D / AR / VR & photogrammetry
 ├── #contact      Contact & social links
 │
-└── stories/
-    ├── history.html                 Our History (2014 founding → today)
-    ├── lapulapu-projects.html       Projects in Lapu-Lapu City
-    ├── drone-aerial.html            Drones & Aerial Surveys
-    ├── maps.html                    Philippines in Maps
-    ├── ai-filipino-llm.html         A Sovereign Filipino Language Model
-    ├── ai-agents.html               AI Agents in the Edit Bay
-    ├── dot-love-philippines.html    DOT — Love the Philippines campaign
-    ├── dot7-eskrima-tour.html       The DOT7 Eskrima Tour of Cebu
-    ├── ironman.html                 Ironman Philippines (IM 70.3 Lapu-Lapu 2024 + Savoy 2022)
-    ├── brides-of-triton.html        Brides at Triton wedding expo (JPARK)
-    ├── big-canoe.html               Big Canoe, Bigger Dream (OC6 paddling)
-    ├── buzzy-budlong.html           Buzzy Budlong
-    ├── olango-practice.html         Practice at Olango
-    ├── games-dev.html               Game Development in the Philippines
-    ├── community-initiatives.html   Bart Sakwerda's community initiatives
-    ├── brand-protection.html        Defending a Brand
-    ├── plank-g.html                 Mary Grace — Plank G (draft)
-    └── cinduy-wedding.html          The Cinduy Cinco Wedding (draft)
+└── stories/                         One folder per story; old flat .html URLs redirect
+    ├── history/                     Our History (2014 founding → today)
+    ├── lapulapu-projects/           Projects in Lapu-Lapu City
+    ├── drone-aerial/                Drones & Aerial Surveys
+    ├── maps/                        Philippines in Maps
+    ├── ai-filipino-llm/             A Sovereign Filipino Language Model
+    ├── ai-agents/                   AI Agents in the Edit Bay
+    ├── dot-love-philippines/        DOT — Love the Philippines campaign
+    ├── dot7-eskrima-tour/           The DOT7 Eskrima Tour of Cebu
+    ├── ironman/                     Ironman Philippines (IM 70.3 Lapu-Lapu 2024 + Savoy 2022)
+    ├── brides-of-triton/            Brides at Triton wedding expo (JPARK)
+    ├── big-canoe/                   Big Canoe, Bigger Dream (OC6 paddling)
+    ├── buzzy-budlong/               Buzzy Budlong
+    ├── olango-practice/             Practice at Olango
+    ├── cleevan-alegres/             Cleevan Alegres — The Little Merman
+    ├── dream-keeper/                The Sinking of M/V Dream Keeper (hand-authored parallax page + own assets/)
+    ├── games-dev/                   Game Development in the Philippines
+    ├── community-initiatives/       Bart Sakwerda's community initiatives
+    ├── brand-protection/            Defending a Brand
+    ├── plank-g/                     Mary Grace — Plank G (draft)
+    └── cinduy-wedding/              The Cinduy Cinco Wedding (draft)
 ```
 
 Note: the province map links to `provinces/<slug>.html` pages that are not built yet; pages marked *(draft)* carry visible draft markers awaiting owner-supplied facts (see [instructions/build-notes-reference.md](instructions/build-notes-reference.md)).

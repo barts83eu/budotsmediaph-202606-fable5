@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-label="The Dream Keeper sinking from the sunlit surface into dark water">
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5db4da"/>
+      <stop offset=".18" stop-color="#2e8fc0"/>
+      <stop offset=".45" stop-color="#10538a"/>
+      <stop offset=".72" stop-color="#04203c"/>
+      <stop offset="1" stop-color="#01080f"/>
+    </linearGradient>
+    <linearGradient id="ray" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="560" fill="url(#sea)"/>
+  <!-- light rays -->
+  <polygon points="120,0 200,0 330,420 290,420" fill="url(#ray)"/>
+  <polygon points="330,0 390,0 470,380 430,380" fill="url(#ray)"/>
+  <polygon points="540,0 640,0 700,340 620,340" fill="url(#ray)"/>
+  <!-- sinking ship -->
+  <g transform="translate(150 190) rotate(11)" opacity=".88">
+    <g fill="#020d16" transform="scale(.8)">
+      <path d="M28 148 L588 148 L626 118 L610 166 Q602 196 554 198 L86 198 Q44 194 28 148 Z"/>
+      <path d="M96 148 L96 112 Q96 106 104 106 L436 106 Q466 108 488 122 L512 148 Z"/>
+      <path d="M140 106 L140 82 Q140 76 148 76 L328 76 Q352 78 368 90 L384 106 Z"/>
+      <path d="M296 76 L312 44 L318 44 L308 76 Z"/>
+      <rect x="311" y="30" width="3" height="16"/>
+      <rect x="303" y="36" width="19" height="3"/>
+      <path d="M384 106 L588 148 L588 143 L390 102 Z"/>
+    </g>
+  </g>
+  <!-- bubbles rising from the ship -->
+  <g fill="none" stroke="#cfe9f5" stroke-opacity=".4" stroke-width="2">
+    <circle cx="560" cy="180" r="5"/>
+    <circle cx="590" cy="140" r="3"/>
+    <circle cx="572" cy="100" r="4"/>
+    <circle cx="602" cy="64" r="2.5"/>
+    <circle cx="584" cy="30" r="3.5"/>
+    <circle cx="300" cy="120" r="3"/>
+    <circle cx="322" cy="76" r="2.5"/>
+    <circle cx="310" cy="36" r="4"/>
+  </g>
+</svg>

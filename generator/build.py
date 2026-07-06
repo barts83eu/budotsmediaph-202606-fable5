@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 # Story page generator for the Budots Media PH site.
 # Edit PAGES below, then run:  python3 generator/build.py
-# Output goes to website/stories/*.html (template: generator/template.html).
+# Output goes to website/stories/<slug>/index.html (template: generator/template.html),
+# plus a redirect stub at website/stories/<slug>.html for the old flat URLs.
+# Story-specific assets live next to the page in website/stories/<slug>/assets/.
+# NOTE: website/stories/dream-keeper/ is hand-authored (custom parallax page) —
+# it is not in PAGES and this script never touches it.
 import pathlib
 
 D = pathlib.Path(__file__).parent
@@ -35,7 +39,7 @@ def img(key, alt=""):
 
 PAGES = {}
 
-PAGES["history.html"] = dict(
+PAGES["history"] = dict(
     TITLE="Our History", H1="Twelve Years,<br>Three Continents",
     KICKER="2014 — Today", HERO=IMG["beach"],
     DESC="The history of Budots Media: founded 2014 in Cebu by Bart Sakwerda, expanded 2020 in Lapu-Lapu City, pivoted to AI.",
@@ -50,7 +54,7 @@ PAGES["history.html"] = dict(
 <p>The team works in eight languages — English, Cebuano, Tagalog, Japanese, Polish, Chinese, Thai and Arabic — and in every medium: film, drones, photogrammetry, maps, graphs, animation and games.</p>
 """)
 
-PAGES["ai-filipino-llm.html"] = dict(
+PAGES["ai-filipino-llm"] = dict(
     TITLE="A Sovereign Filipino Language Model", H1="AI That Speaks<br>Cebuano",
     KICKER="Sovereign AI", HERO=IMG["phone"],
     DESC="Budots Media's priority project: a sovereign Filipino language model and multimodal generative AI.",
@@ -64,7 +68,7 @@ PAGES["ai-filipino-llm.html"] = dict(
 <p>The roadmap runs from a text model for Cebuano and Tagalog toward a multimodal generative model — speech, image and video — trained on our archive. The AI pivot began right after the release of ChatGPT, and is funded through commercial production work, growth markets in Arabia, India and SE Asia, and European Structural Funds via BUDOTS MEDIA POLAND.</p>
 """)
 
-PAGES["ai-agents.html"] = dict(
+PAGES["ai-agents"] = dict(
     TITLE="AI Agents in the Edit Bay", H1="Replacing the<br>Edit Bay",
     KICKER="Production 2.0", HERO=IMG["games"],
     DESC="How Budots Media replaces traditional video editing seats and virtual assistants with AI agents.",
@@ -78,7 +82,7 @@ PAGES["ai-agents.html"] = dict(
 <p>This conviction is also why we build rather than only buy: the same archive that trains our sovereign Filipino model will train agents that understand a Cebu client brief without translation.</p>
 """)
 
-PAGES["drone-aerial.html"] = dict(
+PAGES["drone-aerial"] = dict(
     TITLE="Drones & Aerial Surveys", H1="The View<br>From Above",
     KICKER="Aerial Data Ops", HERO=IMG["collage"],
     DESC="Drone cinematography, aerial surveys, photogrammetry and gaussian splats across Asia and the Middle East.",
@@ -92,7 +96,7 @@ PAGES["drone-aerial.html"] = dict(
 <p>Survey work feeds the map work: orthomosaics and elevation models become the base layers of our Philippine cartography, and scan data becomes assets in our games production.</p>
 """)
 
-PAGES["maps.html"] = dict(
+PAGES["maps"] = dict(
     TITLE="Philippines in Maps", H1="The Philippines,<br>Mapped",
     KICKER="Cartography · Data", HERO=IMG["canoe_d5b"],
     DESC="Budots Media specializes in Philippines maps, graphs and animated data visualization.",
@@ -106,7 +110,7 @@ PAGES["maps.html"] = dict(
 <p>Graphs and animation carry the same weight in our client work — tourism statistics for DOT campaigns, MICE event data for our directory, market data for AI investors. If it has coordinates or numbers, we can make it move.</p>
 """)
 
-PAGES["big-canoe.html"] = dict(
+PAGES["big-canoe"] = dict(
     TITLE="Big Canoe, Bigger Dream", H1="Big Canoe,<br>Bigger Dream",
     KICKER="Community · 227 KM Around Cebu", HERO=IMG["canoe_hero"],
     DESC="Five days, 227 kilometers around Cebu in a six-man outrigger canoe. Expedition coverage by Budots Media.",
@@ -124,7 +128,7 @@ PAGES["big-canoe.html"] = dict(
 <p><em>All expedition photography by Budots Media. Story originally told with Atlas — <a href="https://atlascommune.com/blogs/community/big-canoe-bigger-dream" style="color:var(--accent)">read the full interview</a>.</em></p>
 """)
 
-PAGES["buzzy-budlong.html"] = dict(
+PAGES["buzzy-budlong"] = dict(
     TITLE="Buzzy Budlong", H1="Buzzy<br>Budlong",
     KICKER="Portrait · The Paddler of Cebu", HERO=IMG["canoe_crew"],
     DESC="Portrait of Buzzy Budlong — paddler, canoe builder, founder of Island Buzz and the Philippine Outrigger Canoe Club.",
@@ -138,7 +142,7 @@ PAGES["buzzy-budlong.html"] = dict(
 <p>With Janus Migalbin and Faye Jimera he founded the Philippine Outrigger Canoe Club, and in 2021 led the 227 km Paddle Forward expedition around Cebu — which Budots Media documented from the air. His stated mission: make Cebu the paddling capital of the Philippines. "The bigger the canoe, the bigger the dream."</p>
 """)
 
-PAGES["plank-g.html"] = dict(
+PAGES["plank-g"] = dict(
     TITLE="Mary Grace — Plank G", H1="Plank G",
     KICKER="Portrait · Mary Grace", HERO=IMG["canoe_d5"],
     DESC="Portrait of Mary Grace, known as Plank G.",
@@ -150,7 +154,7 @@ PAGES["plank-g.html"] = dict(
 <p><em>[This profile is a draft — add facts, quotes and photos for Mary Grace via an .md file in the instructions folder and the page will be extended.]</em></p>
 """)
 
-PAGES["ironman.html"] = dict(
+PAGES["ironman"] = dict(
     TITLE="Ironman Philippines", H1="Ironman<br>Philippines",
     KICKER="Endurance · Lapu-Lapu City", HERO=IMG["canoe_coast"],
     DESC="Ironman 70.3 Lapu-Lapu: the Philippines' biggest triathlon, raced from Mactan across the CCLEX.",
@@ -164,7 +168,7 @@ PAGES["ironman.html"] = dict(
 <p>Our relationship with the sport predates the 2024 race: in 2022 Budots Media produced Ironman-themed content for the Savoy Hotel Mactan with athletes Nevian Sanchez and Robert Tatii — a client project that put us in the water with the sport years before the world race returned to our coastline.</p>
 """)
 
-PAGES["brand-protection.html"] = dict(
+PAGES["brand-protection"] = dict(
     TITLE="Defending a Brand", H1="Defending<br>a Brand",
     KICKER="Opinion · Brand Impersonation", HERO=IMG["cebunews"],
     DESC="What happened when the Budots Media brand was copied — and what foreign founders in the Philippines can learn from it.",
@@ -191,7 +195,7 @@ JPARK = "https://static.wixstatic.com/media/acad74_8a4330c55256451797c1d925232d3
 CEBUNEWS = "https://bartsakwerda.com/wp-content/uploads/2024/05/417186906_814731500666278_48153751899014281_n.jpg"
 
 
-PAGES["olango-practice.html"] = dict(
+PAGES["olango-practice"] = dict(
     TITLE="Practice at Olango", H1="Practice<br>at Olango",
     KICKER="Paddle Forward Cebu · June 2021", HERO=OLANGO,
     DESC="Paddle Forward Cebu training day at Olango Island with Island Buzz and the Philippine Outrigger Canoe Club, photographed by Budots Media.",
@@ -203,10 +207,10 @@ PAGES["olango-practice.html"] = dict(
 <img src="{CANOE_D2B}" alt="OC6 crew in formation off Cebu, by Budots Media" loading="lazy">
 <blockquote>"Two days to go — Paddle Forward Cebu. Here's some photos of their practice." — Budots Media, June 2021</blockquote>
 <p>Olango is fitting training water: a marine sanctuary and wetland reserve where POCC's advocacy — paddling as ocean stewardship, boats as heritage — is not abstract. Fourteen days later the same crew set off from SRP to circle Cebu.</p>
-<p><em>Full album: <a href="https://photos.app.goo.gl/QdRjTnqiYMBqMCBT9" style="color:var(--accent)">PFC 2021-06-01 Practice Olango</a> · Continue to <a href="big-canoe.html" style="color:var(--accent)">Big Canoe, Bigger Dream</a>.</em></p>
+<p><em>Full album: <a href="https://photos.app.goo.gl/QdRjTnqiYMBqMCBT9" style="color:var(--accent)">PFC 2021-06-01 Practice Olango</a> · Continue to <a href="../big-canoe/" style="color:var(--accent)">Big Canoe, Bigger Dream</a>.</em></p>
 """)
 
-PAGES["games-dev.html"] = dict(
+PAGES["games-dev"] = dict(
     TITLE="Game Development in the Philippines", H1="Games, Made<br>in the Philippines",
     KICKER="Games · Boracay GameDev Summit", HERO=GAMES,
     DESC="Computer games development in the Philippines and Budots Media's visit to the GameDev Summit in Boracay.",
@@ -220,7 +224,7 @@ PAGES["games-dev.html"] = dict(
 <p>What we brought home from Boracay: gaussian splats and photogrammetry from our aerial survey work become game-ready environments — real Philippine islands, streets and reefs as playable worlds. Combined with a sovereign Filipino language model for dialogue, the pipeline from drone to game to AI is one company's roadmap in miniature.</p>
 """)
 
-PAGES["cinduy-wedding.html"] = dict(
+PAGES["cinduy-wedding"] = dict(
     TITLE="The Cinduy Cinco Wedding", H1="Cinduy<br>Cinco",
     KICKER="Weddings · 2026", HERO=BEACH,
     DESC="The 2026 Cinduy Cinco wedding and the films Budots Media created for it.",
@@ -233,7 +237,7 @@ PAGES["cinduy-wedding.html"] = dict(
 <p><em>[Draft — add Cinduy's photos, video links and details via an .md file in the instructions folder and this page will be extended.]</em></p>
 """)
 
-PAGES["lapulapu-projects.html"] = dict(
+PAGES["lapulapu-projects"] = dict(
     TITLE="Projects in Lapu-Lapu City", H1="Made in<br>Lapu-Lapu",
     KICKER="Home Turf · Mactan Island", HERO=JPARK,
     DESC="Budots Media's projects in Lapu-Lapu City: production house, resorts, Ironman, canoe expeditions, Cebu News.",
@@ -260,7 +264,7 @@ BEACH = "https://bartsakwerda.com/wp-content/uploads/2023/06/201831b3-cb2a-4471-
 PHONE = "https://bartsakwerda.com/wp-content/uploads/2023/09/screenshot-2023-12-19-155931.png"
 
 
-PAGES["brides-of-triton.html"] = dict(
+PAGES["brides-of-triton"] = dict(
     TITLE="Brides at Triton", H1="Brides<br>at Triton",
     KICKER="Weddings · JPARK Island Resort", HERO=JPARK,
     DESC="Brides at Triton: the wedding expo Budots Media produces at JPARK Island Resort's Triton Grand Ballroom, Mactan.",
@@ -270,11 +274,11 @@ PAGES["brides-of-triton.html"] = dict(
 <img src="{JPARK}" alt="JPARK Island Resort, Lapu-Lapu City, host of Brides at Triton" loading="lazy">
 <p>Under the Budots Media banner the expo brings gowns, jewelry, catering, styling, photography, home interiors and livestreaming vendors together under one roof for couples planning a Cebu wedding — the same JPARK relationship that runs through our resort and events client work across Lapu-Lapu City.</p>
 <blockquote>A wedding expo is a portfolio show for an entire industry — every vendor's best day, staged on one weekend.</blockquote>
-<p>It sits alongside our single-couple wedding films — like <a href="cinduy-wedding.html" style="color:var(--accent)">Cinduy Cinco's</a> — as the other half of how Budots Media covers Cebu weddings: one production the industry gathers around, one the story of a single family.</p>
+<p>It sits alongside our single-couple wedding films — like <a href="../cinduy-wedding/" style="color:var(--accent)">Cinduy Cinco's</a> — as the other half of how Budots Media covers Cebu weddings: one production the industry gathers around, one the story of a single family.</p>
 """,
 )
 
-PAGES["dot7-eskrima-tour.html"] = dict(
+PAGES["dot7-eskrima-tour"] = dict(
     TITLE="The DOT7 Eskrima Tour of Cebu", H1="The Eskrima<br>Tour of Cebu",
     KICKER="FMA7 · Filipino Martial Arts Tourism", HERO=COLLAGE,
     DESC="Budots Media's coverage of the DOT7 Eskrima Tour of Cebu, part of the Department of Tourism Region 7's FMA7 Filipino Martial Arts program.",
@@ -288,7 +292,7 @@ PAGES["dot7-eskrima-tour.html"] = dict(
 """,
 )
 
-PAGES["community-initiatives.html"] = dict(
+PAGES["community-initiatives"] = dict(
     TITLE="Bart Sakwerda's Community Initiatives", H1="Beyond<br>Budots Media",
     KICKER="Founder · Community &amp; Ventures", HERO=BEACH,
     DESC="Bart Sakwerda's community initiatives in Cebu: language meetups, the Philippines Travel Company and the first Cebu Chatbot Meetup.",
@@ -305,7 +309,7 @@ PAGES["community-initiatives.html"] = dict(
 )
 
 
-PAGES["dot-love-philippines.html"] = dict(
+PAGES["dot-love-philippines"] = dict(
     TITLE="DOT — Love the Philippines", H1="Love the<br>Philippines",
     KICKER="Department of Tourism", HERO=IMG["collage"],
     DESC="Budots Media's work for the Philippine Department of Tourism under the Love the Philippines campaign: DOT7, FMA7, RIDE7, DIVE7 and a decade of destination stories.",
@@ -316,28 +320,45 @@ PAGES["dot-love-philippines.html"] = dict(
 {{img('collage','Aerial and destination work across the Philippines by Budots Media')}}
 <blockquote>A slogan asks the world to love the Philippines. Footage is the argument.</blockquote>
 <p>The campaign's premise — that the country is more than fun: natural assets, storied history, deep culture — is the same premise behind our maps, our drone surveys and our island stories. Kalanggaman sandbars, Camiguin resorts, Eskrima lineages, outrigger canoes: destination marketing works when the material is real.</p>
-<p>Explore the provinces yourself on our <a href="../index.html#assets" style="color:var(--accent)">clickable map of the Philippines</a>, or read the <a href="dot7-eskrima-tour.html" style="color:var(--accent)">Eskrima Tour of Cebu</a> story.</p>
+<p>Explore the provinces yourself on our <a href="../../index.html#assets" style="color:var(--accent)">clickable map of the Philippines</a>, or read the <a href="../dot7-eskrima-tour/" style="color:var(--accent)">Eskrima Tour of Cebu</a> story.</p>
 <p><em>[Draft — add specific Love the Philippines-era deliverables via an .md file in the instructions folder and this page will be extended.]</em></p>
 """,
 )
 
-PAGES["cleevan-alegres.html"] = dict(
+PAGES["cleevan-alegres"] = dict(
     TITLE="Cleevan Alegres — The Little Merman", H1="The Little<br>Merman",
-    KICKER="2021 · First Swim Around Mactan", HERO="../assets/img/budotsmediaph-com/underwater.webp",
+    KICKER="2021 · First Swim Around Mactan", HERO="../../assets/img/budotsmediaph-com/underwater.webp",
     DESC="Cleevan Alegres, Cebu's Little Merman, became the first person to swim around Mactan Island — 17 hours 37 minutes in April 2021. Budots Media documented the journey.",
     BODY=f"""
 <p class="kicker">Quincentennial · Marine Advocacy</p>
 <p class="lead">At 5 p.m. on April 25, 2021, a 25-year-old open-water swimmer from Barangay Maribago slipped into the sea at Punta Engaño. At 10:37 the next morning he walked out of the water at the Liberty Shrine — the first person ever to swim around Mactan Island. His name is Cleevan Alegres. Cebu calls him the Little Merman.</p>
 <p>The numbers: more than 40 kilometers of open water, 17 hours, 37 minutes and 35 seconds of continuous swimming, through the night, past currents, sisi shells and sea urchins. "I had cuts from my hands and I can barely move it now," he told reporters at the finish. He swam anyway — because the date mattered. The circumnavigation was his tribute to Datu Lapu-Lapu on the 500th anniversary of the Victory at Mactan.</p>
 <blockquote>One man, one island, seventeen and a half hours. The kind of story our home waters write on their own — we just had to be there with the cameras.</blockquote>
-<p>It was also an advocacy swim: Alegres and his support crew collected garbage along the way, turning the feat into a statement on plastic pollution and marine conservation. Lapu-Lapu City rallied behind him — Mactan Electric Company put up an incentive, and the city moved to honor him. Weeks earlier he had warmed up with a 19–21 km practice swim around Olango Island, the same reef-fringed waters where the <a href="olango-practice.html" style="color:var(--accent)">Philippine Outrigger Canoe Club trains</a>.</p>
-<p>Budots Media documented the journey — our production house sits in the same barangay Alegres calls home, and 2021 was the year our cameras followed everything that moved on these waters: the <a href="big-canoe.html" style="color:var(--accent)">227 km OC6 expedition</a>, the paddlers, and one swimmer who refused to stop.</p>
+<p>It was also an advocacy swim: Alegres and his support crew collected garbage along the way, turning the feat into a statement on plastic pollution and marine conservation. Lapu-Lapu City rallied behind him — Mactan Electric Company put up an incentive, and the city moved to honor him. Weeks earlier he had warmed up with a 19–21 km practice swim around Olango Island, the same reef-fringed waters where the <a href="../olango-practice/" style="color:var(--accent)">Philippine Outrigger Canoe Club trains</a>.</p>
+<p>Budots Media documented the journey — our production house sits in the same barangay Alegres calls home, and 2021 was the year our cameras followed everything that moved on these waters: the <a href="../big-canoe/" style="color:var(--accent)">227 km OC6 expedition</a>, the paddlers, and one swimmer who refused to stop.</p>
 <p><em>Press coverage: <a href="https://cebudailynews.inquirer.net/374799/cebus-merman-makes-history-completes-swim-around-mactan-island" style="color:var(--accent)">Cebu Daily News — "Cebu's 'Little Merman' makes history"</a> · <a href="https://cebudailynews.inquirer.net/369848/oponganon-to-make-historic-swim-around-mactan-island-on-april-24" style="color:var(--accent)">CDN preview</a> · <a href="https://www.manilatimes.net/2021/04/25/sports/alegres-attempts-to-become-1st-man-to-swim-around-mactan-island/867203/" style="color:var(--accent)">The Manila Times</a></em></p>
 """)
 
-for name, page in PAGES.items():
+REDIRECT = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>{title} — Budots Media PH</title>
+<meta http-equiv="refresh" content="0; url=./{slug}/">
+<link rel="canonical" href="./{slug}/">
+</head>
+<body>
+<p>This page has moved to <a href="./{slug}/">{slug}/</a>.</p>
+</body>
+</html>
+"""
+
+for slug, page in PAGES.items():
     html = T
     for key in ("TITLE", "DESC", "HERO", "H1", "KICKER", "BODY"):
         html = html.replace("{{%s}}" % key, page[key])
-    (OUT / name).write_text(html)
-    print("wrote", name)
+    (OUT / slug).mkdir(parents=True, exist_ok=True)
+    (OUT / slug / "index.html").write_text(html)
+    # stub at the old flat URL so pre-move links keep working
+    (OUT / f"{slug}.html").write_text(REDIRECT.format(title=page["TITLE"], slug=slug))
+    print("wrote", f"{slug}/index.html", "+ redirect stub")
