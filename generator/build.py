@@ -492,12 +492,71 @@ REDIRECT = """<!DOCTYPE html>
 </html>
 """
 
+LCODES = ("hi", "fil", "ceb")
+
+def langbar(slug, current):
+    # per-page language switcher for the nav; pages live at <lang>/stories/<slug>/
+    parts = []
+    if current == "en":
+        parts.append('<a class="lang active" href="./">EN</a>')
+        parts += [f'<a class="lang" href="../../{c}/stories/{slug}/">{c.upper()}</a>' for c in LCODES]
+    else:
+        parts.append(f'<a class="lang" href="../../../stories/{slug}/">EN</a>')
+        for c in LCODES:
+            if c == current:
+                parts.append(f'<a class="lang active" href="./">{c.upper()}</a>')
+            else:
+                parts.append(f'<a class="lang" href="../../../{c}/stories/{slug}/">{c.upper()}</a>')
+    return "\n    ".join(parts)
+
 for slug, page in PAGES.items():
     html = T
     for key in ("TITLE", "DESC", "HERO", "H1", "KICKER", "BODY"):
         html = html.replace("{{%s}}" % key, page[key])
+    html = html.replace("{{LANGBAR}}", langbar(slug, "en"))
     (OUT / slug).mkdir(parents=True, exist_ok=True)
     (OUT / slug / "index.html").write_text(html)
     # stub at the old flat URL so pre-move links keep working
     (OUT / f"{slug}.html").write_text(REDIRECT.format(title=page["TITLE"], slug=slug))
     print("wrote", f"{slug}/index.html", "+ redirect stub")
+
+# ---- translated static mirrors: website/<code>/stories/<slug>/index.html ----
+# Each generator/translations_<code>.py exports UI (nav/footer strings) and
+# T (dict keyed by slug with the same placeholder keys as PAGES).
+# HERO falls back to the English page. Landing pages under /<code>/ are
+# hand-maintained; only story pages are generated here.
+import importlib
+
+for code in LCODES:
+    try:
+        mod = importlib.import_module(f"translations_{code}")
+    except ModuleNotFoundError:
+        continue
+    TR, UI = mod.T, mod.UI
+    T_L = (
+        T.replace('<html lang="en">', f'<html lang="{code}">')
+         .replace('href="../../css/main.css"', 'href="../../../css/main.css"')
+         .replace('src="../../js/main.js"', 'src="../../../js/main.js"')
+         .replace('src="../../assets/img/logos/budotsmedia-logo.svg"',
+                  'src="../../../assets/img/logos/budotsmedia-logo.svg"')
+         .replace('<a href="../">Stories</a>', '<a href="../">%s</a>' % UI["stories"])
+         .replace('<a href="../../projects/">Projects</a>',
+                  '<a href="../../projects/">%s</a>' % UI["projects"])
+         .replace('<a href="../../ai/">AI</a>', '<a href="../../ai/">%s</a>' % UI["ai"])
+         .replace('<a href="../../index.html#contact">Contact</a>',
+                  '<a href="../../index.html#contact">%s</a>' % UI["contact"])
+         .replace('← All stories', UI["all_stories"])
+         .replace('© 2026 Budots Media. Founded by Bart Sakwerda.', UI["footer"])
+    )
+    out = D.parent / "website" / code / "stories"
+    for slug, page in TR.items():
+        html = T_L
+        for key in ("TITLE", "DESC", "HERO", "H1", "KICKER", "BODY"):
+            val = page.get(key) or PAGES[slug][key]
+            if key == "HERO":
+                val = val.replace("../../assets/", "../../../assets/")
+            html = html.replace("{{%s}}" % key, val)
+        html = html.replace("{{LANGBAR}}", langbar(slug, code))
+        (out / slug).mkdir(parents=True, exist_ok=True)
+        (out / slug / "index.html").write_text(html)
+    print(f"wrote {code}/stories - {len(TR)} pages")

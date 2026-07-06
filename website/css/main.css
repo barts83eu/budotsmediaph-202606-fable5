@@ -49,6 +49,14 @@ h1, h2, h3, .display {
 }
 .nav .links a:hover { opacity: 1; color: var(--accent); }
 
+/* language switcher in nav */
+.nav .links a.lang {
+  font-size: .65rem; opacity: .5; margin-left: .55rem; letter-spacing: .08em;
+  border: 1px solid rgba(255,255,255,.25); border-radius: 4px; padding: .15rem .35rem;
+}
+.nav .links a.lang:first-of-type { margin-left: 1.2rem; }
+.nav .links a.lang.active { color: var(--accent); border-color: var(--accent); opacity: 1; }
+
 /* ---------- particles canvas ---------- */
 #particles {
   position: fixed; inset: 0; z-index: 0; pointer-events: none;
