@@ -23,7 +23,7 @@ def lastmod(path):
 
 
 pages = [("", WEB / "index.html")]
-for d in ("stories", "projects", "ai", "showcase", "partners"):
+for d in ("stories", "projects", "ai", "showcase", "partners", "india"):
     if (WEB / d / "index.html").exists():
         pages.append((f"{d}/", WEB / d / "index.html"))
 # one folder per story; the flat stories/<slug>.html files are redirect stubs,
@@ -33,6 +33,20 @@ for d in sorted((WEB / "stories").iterdir()):
         if 'http-equiv="refresh"' in (d / "index.html").read_text():
             continue
         pages.append((f"stories/{d.name}/", d / "index.html"))
+
+# translated static mirrors: website/<lang>/... (landing pages + story pages)
+for lang in ("hi", "fil", "ceb"):
+    lroot = WEB / lang
+    if not lroot.exists():
+        continue
+    for d in ("", "stories", "projects", "ai", "showcase", "partners", "india"):
+        if (lroot / d / "index.html").exists():
+            rel = f"{lang}/{d}/" if d else f"{lang}/"
+            pages.append((rel, lroot / d / "index.html"))
+    if (lroot / "stories").exists():
+        for d in sorted((lroot / "stories").iterdir()):
+            if d.is_dir() and (d / "index.html").exists():
+                pages.append((f"{lang}/stories/{d.name}/", d / "index.html"))
 
 lines = [
     '<?xml version="1.0" encoding="UTF-8"?>',

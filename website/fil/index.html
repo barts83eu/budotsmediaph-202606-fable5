@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0QY44NZW9Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0QY44NZW9Y');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Budots Media Philippines — Mga Kuwento, Media, AI</title>
+<meta name="description" content="Budots Media Philippines — production house sa Lapu-Lapu City, Cebu. Itinatag noong 2014 ni Bart Sakwerda. Video, drone, mapa, data visualization at soberanong Filipino AI.">
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<div id="progress"></div>
+<canvas id="particles"></canvas>
+
+<nav class="nav">
+  <a class="brand" href="index.html" style="display:flex;align-items:center;gap:.6rem"><img src="../assets/img/logos/budotsmedia-logo.svg" alt="Budots Media logo" style="height:34px">BUDOTS<span> MEDIA</span> PH</a>
+  <div class="links">
+    <a href="#stories">Mga Kuwento</a>
+    <a href="projects/">Mga Proyekto</a>
+    <a href="#history">Kasaysayan</a>
+    <a href="ai/">AI</a>
+    <a href="india/">India</a>
+    <a href="#contact">Kontak</a>
+    <a class="lang" href="../index.html">EN</a>
+    <a class="lang" href="../hi/">HI</a>
+    <a class="lang active" href="./">FIL</a>
+    <a class="lang" href="../ceb/">CEB</a>
+  </div>
+</nav>
+
+<div class="dots"></div>
+
+<!-- HERO -->
+<header class="hero" id="top" data-dot="Simula">
+  <div class="bg" data-parallax="0.35" style="background-image:url('https://cdn.shopify.com/s/files/1/0531/1099/7154/files/20210613_-_DRONE_DAY2_-072_1_2048x2048.jpg?v=1625890534')"></div>
+  <h1>Budots Media<br>Philippines</h1>
+  <p class="sub">Mga Kuwento · Drone · Mapa · AI</p>
+  <img src="https://cdn.prod.website-files.com/60d23ed0ea65be0cdbf4ea0e/60d38fe48e4d5c3e65c5e0c8_budotsmedia-drone-dji-protek35.png" alt="DJI drone" data-parallax="0.55" style="position:absolute;width:min(180px,28vw);right:6%;top:18%;z-index:1;filter:drop-shadow(0 12px 24px rgba(0,0,0,.5))">
+  <img src="https://cdn.prod.website-files.com/60d23ed0ea65be0cdbf4ea0e/60d271ce9c897832196db251_oc6-boat-mini.png" alt="OC6 outrigger canoe" data-parallax="0.15" style="position:absolute;width:min(220px,34vw);left:4%;bottom:14%;z-index:1;filter:drop-shadow(0 12px 24px rgba(0,0,0,.5))">
+  <div class="scroll-ind"><div class="mouse"></div><span>Mag-scroll</span></div>
+</header>
+
+<!-- MISSION -->
+<section class="section" id="mission" data-dot="Misyon">
+  <h2 class="reveal">Misyon</h2>
+  <p class="lead reveal">Ginagawa naming mga kuwento ang Pilipinas na makikita ng mundo. Mula sa production house sa Lapu-Lapu City, Cebu, kami ay nagpepelikula, lumilipad, gumagawa ng mapa at animation — at ngayon, AI rin. Pangunahing layunin: isang soberanong Filipino language model at multimodal generative AI na nagsasalita ng Cebuano at Tagalog nang likas.</p>
+  <div class="stats reveal">
+    <div class="stat"><div class="num" data-count="2014">0</div><div class="cap">Itinatag</div></div>
+    <div class="stat"><div class="num" data-count="8">0</div><div class="cap">Mga Wika</div></div>
+    <div class="stat"><div class="num" data-count="3">0</div><div class="cap">Opisina — PH · PL · UK</div></div>
+    <div class="stat"><div class="num" data-count="227">0</div><div class="cap">KM na sinagwan paikot ng Cebu</div></div>
+  </div>
+</section>
+
+<!-- PARALLAX BANNER -->
+<div class="banner">
+  <div class="bg" data-parallax="0.25" style="background-image:url('https://bartsakwerda.com/wp-content/uploads/2023/08/bart-sakwerda-drone-photogrammetry-portfolio.png')"></div>
+  <h3>Mula Cebu hanggang Riyadh, Dubai, Singapore at Kuala Lumpur</h3>
+</div>
+
+<!-- STORIES -->
+<section class="section" id="stories" data-dot="Mga Kuwento">
+  <h2 class="reveal">Mga Kuwento</h2>
+  <p class="lead reveal">Mga mahahabang kuwentong ginawa, pinilm at inilathala namin.</p>
+  <div class="grid" style="margin-top:2.5rem">
+    <a class="card reveal" href="stories/history/" style="background-image:url('https://bartsakwerda.com/wp-content/uploads/2023/06/201831b3-cb2a-4471-ac83-29bc2869c269.jpg')">
+      <div class="label"><div class="kicker">2014 → ngayon</div><h3>Ang Aming Kasaysayan</h3></div>
+    </a>
+    <a class="card reveal" href="stories/ai-filipino-llm/" style="background-image:url('https://bartsakwerda.com/wp-content/uploads/2023/09/screenshot-2023-12-19-155931.png')">
+      <div class="label"><div class="kicker">Soberanong AI</div><h3>Filipino Language Model</h3></div>
+    </a>
+    <a class="card reveal" href="stories/ai-agents/" style="background-image:url('https://bartsakwerda.com/wp-content/uploads/2024/04/screenshot-2024-04-07-163128.png')">
+      <div class="label"><div class="kicker">Produksyon 2.0</div><h3>Mga AI Agent sa Edit Bay</h3></div>
+    </a>
+    <a class="card reveal" href="stories/drone-aerial/" style="background-image:url('https://bartsakwerda.com/wp-content/uploads/2023/08/bart-sakwerda-drone-photogrammetry-portfolio.png')">
+      <div class="label"><div class="kicker">Aerial</div><h3>Mga Drone at Survey</h3></div>
+    </a>
+    <a class="card reveal" href="stories/maps/" style="background-image:url('https://cdn.prod.website-files.com/60d23ed1ea65be4525f4ea1f/648fe655fd1699ec8b20c8d3_city_lights_asia_night_8k.jpg')">
+      <div class="label"><div class="kicker">Kartograpiya</div><h3>Ang Pilipinas sa Mapa</h3></div>
+    </a>
+    <a class="card reveal" href="stories/big-canoe/" style="background-image:url('https://cdn.shopify.com/s/files/1/0531/1099/7154/files/20210621_-_DRONE_DAY3_PHOTOS_SUMILON_-039_2048x2048.jpg?v=1625890843')">
+      <div class="label"><div class="kicker">Komunidad · Isports</div><h3>Malaking Bangka, Mas Malaking Pangarap</h3></div>
+    </a>
+    <a class="card reveal" href="stories/buzzy-budlong/" style="background-image:url('https://cdn.shopify.com/s/files/1/0531/1099/7154/files/RAP_4732_2048x2048.jpg?v=1625890069')">
+      <div class="label"><div class="kicker">Portrait</div><h3>Buzzy Budlong</h3></div>
+    </a>
+    <a class="card reveal" href="stories/plank-g/" style="background-image:url('https://cdn.shopify.com/s/files/1/0531/1099/7154/files/20210616-Paddle_Forward_Cebu_Day_5-034_2048x2048.jpg?v=1625890233')">
+      <div class="label"><div class="kicker">Portrait</div><h3>Mary Grace "Plank G"</h3></div>
+    </a>
+    <a class="card reveal" href="stories/ironman/" style="background-image:url('https://cdn.shopify.com/s/files/1/0531/1099/7154/files/20210613_-_DRONE_DAY2_-005_2048x2048.jpg?v=1625890160')">
+      <div class="label"><div class="kicker">Endurance</div><h3>Ironman Philippines</h3></div>
+    </a>
+    <a class="card reveal" href="stories/olango-practice/" style="background-image:url('https://lh3.googleusercontent.com/pw/AP1GczOsP2lrRkOnDYRo7jbJtRSI8YmwZ-PiLZG6eeaNeEGUNmgBtiFHYSIzj4TemzZ9a8D93DdaWel_aDh3m0UHZyCQD3UMqb90a8BurcwzIWd9ymjyadMc=w1200')">
+      <div class="label"><div class="kicker">Island Buzz · POCC</div><h3>Praktis sa Olango</h3></div>
+    </a>
+    <a class="card reveal" href="stories/cleevan-alegres/" style="background-image:url('../assets/img/budotsmediaph-com/underwater.webp')">
+      <div class="label"><div class="kicker">2021 · Unang languyan paikot ng Mactan</div><h3>Ang Little Merman</h3></div>
+    </a>
+    <a class="card reveal" href="stories/dream-keeper/" style="background-image:url('../stories/dream-keeper/assets/card.svg')">
+      <div class="label"><div class="kicker">2023 · Dagat Sulu</div><h3>Ang Paglubog ng Dream Keeper</h3></div>
+    </a>
+    <a class="card reveal" href="stories/games-dev/" style="background-image:url('https://bartsakwerda.com/wp-content/uploads/2024/04/screenshot-2024-04-07-163128.png')">
+      <div class="label"><div class="kicker">Boracay GameDev Summit</div><h3>Mga Laro, Gawa sa PH</h3></div>
+    </a>
+    <a class="card reveal" href="stories/cindy-wedding/" style="background-image:url('https://bartsakwerda.com/wp-content/uploads/2023/06/201831b3-cb2a-4471-ac83-29bc2869c269.jpg')">
+      <div class="label"><div class="kicker">Mga Kasal · 2026</div><h3>Cindy Cinco</h3></div>
+    </a>
+    <a class="card reveal" href="stories/lapulapu-projects/" style="background-image:url('https://cdn.prod.website-files.com/60d23ed1ea65be4525f4ea1f/6644e76ace81835b560ca739_budotsmedia-jpark-lapulapucity-2024.jpg')">
+      <div class="label"><div class="kicker">Home Turf</div><h3>Gawa sa Lapu-Lapu</h3></div>
+    </a>
+    <a class="card reveal" href="stories/brand-protection/" style="background-image:url('https://bartsakwerda.com/wp-content/uploads/2024/05/417186906_814731500666278_48153751899014281_n.jpg')">
+      <div class="label"><div class="kicker">Opinyon</div><h3>Pagtatanggol sa Brand</h3></div>
+    </a>
+    <a class="card reveal" href="stories/brides-of-triton/" style="background-image:url('https://static.wixstatic.com/media/acad74_8a4330c55256451797c1d925232d3b17~mv2.jpg/v1/fit/w_2500,h_1330,al_c/acad74_8a4330c55256451797c1d925232d3b17~mv2.jpg')">
+      <div class="label"><div class="kicker">Mga Kasal · JPARK</div><h3>Brides at Triton</h3></div>
+    </a>
+    <a class="card reveal" href="stories/dot7-eskrima-tour/" style="background-image:url('https://bartsakwerda.com/wp-content/uploads/2023/08/bart-sakwerda-drone-photogrammetry-portfolio.png')">
+      <div class="label"><div class="kicker">FMA7</div><h3>Ang Eskrima Tour ng Cebu</h3></div>
+    </a>
+    <a class="card reveal" href="stories/community-initiatives/" style="background-image:url('https://bartsakwerda.com/wp-content/uploads/2023/06/201831b3-cb2a-4471-ac83-29bc2869c269.jpg')">
+      <div class="label"><div class="kicker">Founder</div><h3>Lampas sa Budots Media</h3></div>
+    </a>
+  </div>
+  <p class="reveal" style="text-align:center;margin-top:2rem"><a class="backlink" href="stories/">Lahat ng kuwento →</a></p>
+</section>
+
+<!-- HISTORY -->
+<section class="section" id="history" data-dot="Kasaysayan">
+  <h2 class="reveal">Kasaysayan</h2>
+  <div class="timeline">
+    <div class="tl-item reveal"><div class="year">2014</div><p>Itinatag ni Bart Sakwerda ang BUDOTS MEDIA sa panahon ng rehabilitasyon matapos ang Bagyong Yolanda — una sa Budlaan, pagkatapos sa Banilad, Cebu.</p></div>
+    <div class="tl-item reveal"><div class="year">2015</div><p>Lumipat ang opisina sa Maribago, Lapu-Lapu City.</p></div>
+    <div class="tl-item reveal"><div class="year">2016</div><p>BUDOTS MEDIA LONDON — mga opisina sa Hackney at Camden High Street (hanggang 2020).</p></div>
+    <div class="tl-item reveal"><div class="year">2020</div><p>Paglawak noong COVID: itinayo ang buong production house sa Lapu-Lapu City. Tumuloy ang trabaho habang tumitigil ang mundo.</p></div>
+    <div class="tl-item reveal"><div class="year">2023</div><p>Paglipat sa AI matapos ang ChatGPT. Mga kliyente sa Saudi Arabia; focus sa paglago: Arabia, India at SE Asia. Access sa European Structural Funds sa pamamagitan ng BUDOTS MEDIA POLAND.</p></div>
+    <div class="tl-item reveal"><div class="year">Ngayon</div><p>Priority: soberanong Filipino language model at multimodal generative AI. Games, mapa, data visualization, aerial survey.</p></div>
+  </div>
+  <a class="backlink" href="stories/history/">Basahin ang buong kuwento →</a>
+</section>
+
+<!-- ASSETS -->
+<section class="section" id="assets" data-dot="Assets">
+  <h2 class="reveal">Assets</h2>
+  <p class="lead reveal">Espesyalista ang Budots Media sa mga mapa ng Pilipinas. Bawat lalawigan sa ibaba ay maaaring i-click — ginagawa pa ang mga dedicated na pahina ng lalawigan.</p>
+  <div class="phmap reveal">
+    <object data="../assets/img/ph-provinces.svg" type="image/svg+xml" aria-label="Ma-click na mapa ng mga lalawigan ng Pilipinas"></object>
+  </div>
+  <p class="reveal" style="text-align:center"><a class="backlink" href="stories/dot-love-philippines/">DOT · Love the Philippines →</a> &nbsp;·&nbsp; <a class="backlink" href="stories/maps/">Ang Pilipinas sa Mapa →</a></p>
+</section>
+
+<!-- GEN AI -->
+<section class="section" id="genai" data-dot="Gen AI">
+  <h2 class="reveal">Gen AI</h2>
+  <p class="lead reveal">Generative AI video — sanay na mata, bagong kasangkapan. Portfolio ng AI-made at AI-assisted na produksyon mula sa bahay na gumagawa ng soberanong Filipino language model.</p>
+  <div class="grid" style="margin-top:2.5rem" id="genai-grid">
+    <div class="card reveal" style="background:linear-gradient(160deg,#1c1f24,#0a0a0a)">
+      <div class="label"><div class="kicker">[Draft — parating ang mga video link]</div><h3>Gen AI Reel 01</h3></div>
+    </div>
+    <div class="card reveal" style="background:linear-gradient(200deg,#1c1f24,#0a0a0a)">
+      <div class="label"><div class="kicker">[Draft — parating ang mga video link]</div><h3>Gen AI Reel 02</h3></div>
+    </div>
+    <div class="card reveal" style="background:linear-gradient(120deg,#1c1f24,#0a0a0a)">
+      <div class="label"><div class="kicker">[Draft — parating ang mga video link]</div><h3>Gen AI Reel 03</h3></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3D / AR / VR -->
+<section class="section" id="three-d" data-dot="3D">
+  <h2 class="reveal">3D · AR · VR</h2>
+  <p class="lead reveal">Mula drone photogrammetry hanggang product render — binubuo namin ang Pilipinas sa tatlong dimensyon.</p>
+  <div class="grid" style="margin-top:2.5rem" id="threed-grid">
+    <a class="card reveal" href="stories/drone-aerial/" style="background-image:url('https://bartsakwerda.com/wp-content/uploads/2023/08/bart-sakwerda-drone-photogrammetry-portfolio.png')">
+      <div class="label"><div class="kicker">Photogrammetry</div><h3>3D Scan at Orthomosaic</h3></div>
+    </a>
+    <div class="card reveal" style="background:linear-gradient(160deg,#1c1f24,#0a0a0a)">
+      <div class="label"><div class="kicker">3D Render</div><h3>Gatorade Product Render</h3></div>
+    </div>
+    <div class="card reveal" style="background:linear-gradient(200deg,#1c1f24,#0a0a0a)">
+      <div class="label"><div class="kicker">[Draft — parating ang listahan ng AR]</div><h3>AR</h3></div>
+    </div>
+    <div class="card reveal" style="background:linear-gradient(120deg,#1c1f24,#0a0a0a)">
+      <div class="label"><div class="kicker">[Draft — parating ang listahan ng VR]</div><h3>VR</h3></div>
+    </div>
+  </div>
+</section>
+
+<!-- BANNER -->
+<div class="banner">
+  <div class="bg" data-parallax="0.25" style="background-image:url('https://cdn.shopify.com/s/files/1/0531/1099/7154/files/20210613_-_DRONE_DAY2_-043_2048x2048.jpg?v=1625889218')"></div>
+  <h3>"Kung mas malaki ang bangka, mas malaki ang pangarap."</h3>
+</div>
+
+<!-- CLIENTS / light zone -->
+<section class="section light" id="portfolio" data-dot="Mga Kliyente">
+  <h2 class="reveal">Mga Kliyente</h2>
+  <p class="lead reveal">Philippine Department of Tourism · DOT Region 7 (FMA7, RIDE7, DIVE7) · BYD · JPARK Island Resort · NUSTAR Resort &amp; Casino · Savoy Hotel Mactan Newtown · Megaworld · Belmont Hotel · Nouveau Resort Camiguin · Aboitiz Foundation · CCLEX · Mga proyekto ng LGU sa 5+ lalawigan sa pamamagitan ng PhilGEPS bidding.</p>
+  <p class="reveal">Ang aming ekosistema ng intellectual property: <strong>Kalanggaman.com</strong> (turismo ng Pilipinas), Philippines MICE event directory, Cebu News, Aerial Data Ops, Philippines Travel Company.</p>
+  <p class="reveal">Pangmatagalang relasyon: pag-aalaga ng media library para sa DOT7, matagal nang Brides at Triton wedding expo kasama ang JPARK, at multi-year na aerial/media coverage para sa Camiguin Resorts.</p>
+  <p class="reveal" style="text-align:center"><a class="backlink" href="../index.html#portfolio">Buong client wall (logo) sa pahinang Ingles →</a></p>
+  <div class="langs reveal">
+    <span>English</span><span>Cebuano</span><span>Tagalog</span><span>हिन्दी</span><span>日本語</span><span>Polski</span><span>中文</span><span>ไทย</span><span>العربية</span>
+  </div>
+</section>
+
+<footer id="contact" data-dot="Kontak">
+  <div class="brandline">BUDOTS MEDIA PHILIPPINES</div>
+  <small>Lapu-Lapu City, Cebu · Poland · London<br>
+  <a href="https://facebook.com/budots.media">facebook.com/budots.media</a> · <a href="https://linkedin.com/in/bartsakwerda">linkedin.com/in/bartsakwerda</a> · <a href="https://x.com/bartsakwerda">x.com/bartsakwerda</a></small>
+  <small>© 2026 Budots Media. Itinatag ni Bart Sakwerda.</small>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
