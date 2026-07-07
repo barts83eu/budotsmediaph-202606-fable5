@@ -492,7 +492,8 @@ REDIRECT = """<!DOCTYPE html>
 </html>
 """
 
-LCODES = ("hi", "fil", "ceb")
+LCODES = ("hi", "fil", "ceb", "ar", "ja", "ko", "zh", "pl")
+RTL_LANGS = {"ar"}
 
 def langbar(slug, current):
     # per-page language switcher for the nav; pages live at <lang>/stories/<slug>/
@@ -533,8 +534,9 @@ for code in LCODES:
     except ModuleNotFoundError:
         continue
     TR, UI = mod.T, mod.UI
+    html_tag = f'<html lang="{code}" dir="rtl">' if code in RTL_LANGS else f'<html lang="{code}">'
     T_L = (
-        T.replace('<html lang="en">', f'<html lang="{code}">')
+        T.replace('<html lang="en">', html_tag)
          .replace('href="../../css/main.css"', 'href="../../../css/main.css"')
          .replace('src="../../js/main.js"', 'src="../../../js/main.js"')
          .replace('src="../../assets/img/logos/budotsmedia-logo.svg"',
